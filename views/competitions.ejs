@@ -1,0 +1,38 @@
+<!-- @format -->
+
+<%- include('includes/head.ejs') %>
+    <link
+      rel="stylesheet"
+      href="css/competitions.css"
+    />
+    <link rel="stylesheet" href="css/comp-page.css" />
+    <title>About Page</title>
+  </head>
+  <body>
+  <%- include('includes/header.ejs') %>
+    <main>
+      <div class="competitions">
+        <h1>ABM Competitions</h1>
+        <div class="competitions__items">
+          <div class="item">
+            <a href="/competitions/cup-benelux">
+              <img src="../../img/cup-benelux.jpg" alt="cup-benelux" />
+            </a>
+            <div class="content">
+              <a href="/competitions/cup-benelux"><h1>Cup Benelux 2023</h1></a>
+              <p>
+                Cup Benelux is a debut of ABM in Europe. Renaissance of running
+                sport from the individual activity to the global team game.
+              </p>
+              <div class="date">
+                <p>24 <span>03/2023</span> - 25 <span>03/2023</span></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  <%- include('includes/footer.ejs') %>
+  <%- include('includes/menu.ejs') %>
+  <script src="js/menu.js"></script>
+  <%- include('includes/end.ejs') %>

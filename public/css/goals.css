@@ -1,0 +1,122 @@
+body {
+    overflow-x: hidden;
+}
+
+.goals-overview {
+    background-color: #ee342c;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: space-between;
+    position: relative;
+}
+
+.goals-overview h2 {
+    font-size: 38px;
+    color: gold;
+}
+
+.goals-overview .item {
+    font-size: 48px;
+    color: #11111b;
+
+    align-self: center;
+    justify-self: center;
+}
+
+.goals-overview .item.fi {
+    align-self: start;
+    justify-self: start;
+    color: white;
+}
+
+.goals-overview .item:last-child {
+    align-self: end;
+    justify-self: end;
+    color: gold;
+}
+
+
+.goals {
+    background: url("/img/goals_bg.jpg") no-repeat center center;
+    background-size: cover;
+    /*height: 100vh;*/
+    display: flex;
+    justify-content: space-between;
+}
+
+.goals .goals__image {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    align-self: end;
+}
+
+.goals .goals__image h1 {
+    font-size: 112px;
+    color: gold;
+    transform: rotate(-20deg);
+}
+
+.goals .goals__image img {
+    object-fit: contain;
+    align-self: end;
+    height: 100%;
+    width: 80%;
+}
+
+.goals ul {
+    flex-shrink: 0.3;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 80%;
+    justify-content: space-around;
+    list-style: none;
+}
+
+.goals ul li {
+    font-size: 32px;
+    color: gold;
+    justify-self: center;
+    padding: 10px 20px;
+    border-left: 2px solid gold;
+}
+
+.goals ul li span {
+    font-size: 16px;
+    color: black;
+    align-self: center;
+    justify-self: center;
+}
+
+@media screen and (max-width: 992px){
+    .goals .goals__image img {
+        width:100%;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .goals__overview {
+        height: 80vh;
+    }
+    .goals-overview .item {
+        font-size: 32px;
+    }
+
+    .goals {
+        display: block;
+    }
+
+    .goals .goals__image img {
+        display: none;
+    }
+
+    .goals .goals__image h1 {
+        align-self: center;
+        margin: 50px 0;
+        transform: rotate(0);
+    }
+}

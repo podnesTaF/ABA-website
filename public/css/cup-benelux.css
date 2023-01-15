@@ -1,0 +1,161 @@
+.competition h1 {
+  background-color: #ee342c;
+  font-size: 42px;
+  color: gold;
+  padding: 20px;
+}
+
+.competition img {
+  width: 100%;
+  height: auto;
+}
+
+.competition .content>h2 {
+  font-size: 42px;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.competition .content>p {
+  font-size: 20px;
+  padding: 20px 0;
+  text-align: center;
+}
+
+
+
+
+.statistic {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.statistic .item {
+  margin-left: 20px;
+  width: 200px;
+}
+
+.statistic .item h2 {
+  font-size: 48px;
+}
+
+.statistic .item p {
+  background-color: #ee342c;
+  color: gold;
+  padding: 7px;
+}
+
+.competition .wrapper {
+  width: 100%;
+  padding: 20px;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+}
+
+.competition .wrapper .wrapper-col {
+  width: 910px;
+}
+
+
+.wrapper h2 {
+  font-size: 32px;
+}
+
+.participants {
+  background: url('/img/counties.jpg') no-repeat top right;
+  margin-bottom: 30px;
+  height: 400px;
+}
+
+.participants .lists {
+  display: flex;
+  max-width: 700px;
+  flex-wrap: wrap;
+}
+
+.participants .lists ul {
+  width: 200px;
+  margin-top: 20px;
+  margin-left: 50px;
+}
+
+.teams .lists {
+  margin-top: 20px;
+}
+
+
+.teams .lists ul {
+  margin-left: 20px;
+}
+
+.teams .lists ul li {
+  font-size: 18px;
+  margin-top: 20px;
+}
+
+.teams .lists ul li:first-child {
+  font-size: 24px;
+  list-style-type: none;
+}
+
+.teams .lists ul li:not(:first-child) {
+  margin-left: 40px;
+}
+
+.program {
+  background: url('/img/program.jpg') no-repeat center right;
+  background-size: contain;
+}
+
+.program h3 {
+  font-size: 24px;
+  margin: 20px 10px;
+}
+
+.program ul {
+  margin-left: 30px;
+  padding-bottom: 30px;
+}
+
+.program ul li:not(:last-child) {
+  margin-bottom: 8px;
+}
+
+.preview {
+  position: sticky;
+  top: 30px;
+  right: 19px;
+  width: 300px;
+  height: 100%;
+  background-color: #ee342c;
+  display: flex;
+  padding: 10px;
+  flex-direction: column;
+  border-radius: 10px;
+  color: gold;
+}
+
+.competition .preview .item {
+  width: 100%;
+  margin: 10px 0;
+}
+
+.competition .preview .item a {
+  color: #11111b;
+  text-decoration: none;
+}
+
+.competition .preview .item a:hover {
+  opacity: 0.5;
+}
+
+.competition .preview .item p {
+  color: #11111b;
+}
+
+.competition .preview .item a span {
+  color: #11111b;
+}

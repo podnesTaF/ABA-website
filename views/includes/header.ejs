@@ -1,0 +1,26 @@
+<header>
+    <div class="intro-image">
+        <a href="#"><img src="<%= introImage %>" alt="main-logo" /></a>
+    </div>
+    <nav>
+        <div class="nav_wrapper">
+            <img src="/img/logo.svg" alt="logo" />
+            <ul class="header__nav-list">
+                <li><a class="<%= path === '/' ? 'active' : '' %>" href="/">Main</a></li>
+                <li><a class="<%= path === '/about' ? 'active' : '' %>" href="/about">About ABA</a></li>
+                <li><a class="<%= path === '/rules' ? 'active' : '' %>" href="/rules">Rules</a></li>
+                <li>
+                    <a class="<%= path === '/competitions' ? 'active' : '' %>" href="/competitions">Competitions</a>
+                </li>
+                <li><a href="#">EN</a></li>
+            </ul>
+            <div class="burger">
+                <svg viewBox="0 0 384 384">
+                    <rect x="0" y="277.333" width="384" height="42.667" fill='gold'></rect>
+                    <rect x="0" y="170.667" width="384" height="42.667" fill='gold'></rect>
+                    <rect x="0" y="64" width="384" height="42.667" fill='gold'></rect>
+                </svg>
+            </div>
+        </div>
+    </nav>
+</header>
