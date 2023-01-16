@@ -4,7 +4,7 @@ const express = require('express');
 const path = require('path');
 const bodyParser = require('body-parser');
 
-const mainRouter = require('./routes/index');
+const mainRouter = require('./routes');
 
 const app = express();
 
@@ -17,7 +17,6 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use(mainRouter);
 
 const PORT = process.env.PORT || 4000;
-
 app.listen(PORT, () => {
-  console.log('server is running on port ' + PORT);
+    console.log('server is running on port ' + PORT);
 });
