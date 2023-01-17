@@ -1,181 +1,138 @@
 <!-- @format -->
 
 <%- include('includes/head.ejs') %>
-    <link rel="stylesheet" href="css/about.css" />
-    <link rel="stylesheet" href="css/about-page.css" />
+<link rel="stylesheet" href="css/about.css"/>
+<link rel="stylesheet" href="css/about-page.css"/>
 <link rel="stylesheet" href="/css/goals.css">
-  </head>
-  <body>
-  <%- include('includes/header.ejs') %>
-    <main>
-      <div class="about">
+<link rel="stylesheet" href="/css/stepper.css">
+</head>
+<body>
+<%- include('includes/header.ejs') %>
+<main>
+    <div class="about">
         <div class="about__intro">
-          <h1>Ace Battle Association</h1>
-          <ul class="items">
-            <li>
-              <p>
-                Running
-              </p>
-            </li>
-            <li>
-              <p>
-                Team-spirit
-              </p>
-            </li>
-            <li>
-              <p>
-                High-tech
-              </p>
-            </li>
-            <li>
-              <p>
-                Adrenaline
-              </p>
-            </li>
-          </ul>
-          <img src="/img/running_girls.jpg" alt="running girls" />
+            <h1>Ace Battle Association</h1>
+            <ul class="items">
+                <li>
+                    <p>
+                        Running
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        Team-spirit
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        High-tech
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        Adrenaline
+                    </p>
+                </li>
+            </ul>
+            <img src="/img/running_girls.jpg" alt="running girls"/>
         </div>
-      <div class="goals-overview">
-        <h2>New team running sport game</h2>
-        <div class="item fi">
-          <h1>modern</h1>
-        </div>
-        <div class="item">
-          <h1>dynamic</h1>
-        </div>
-        <div class="item">
-          <h1>spectacular</h1>
-        </div>
-      </div>
-      <div class="goals">
-        <div class="goals__image">
-          <h1>Goals</h1>
-          <img src="/img/goals-img.jpg" alt="goals">
-        </div>
-        <ul>
-          <li>Sportive <br><span>(competitive, athletic, hardly predictable)</span></li>
-          <li>Popularizing <br><span>(the health, the new kind of sport and running, the renaissance of  running sport from the individual activity to the global team game)</span>
-          </li>
-          <li>Cultural <br><span>(share of run philosophy, lifestyle, fashion, principles of joining, team  building, friendship, support, development of the new subculture)</span>
-          </li>
-          <li>Social <br><span>(the new type of time spending, events and entertainments for all family,  col eagues, friends, with celebrity guests and show implants, fan’s  power, actual and influential trend)</span>
-          </li>
-          <li>Commercial <br><span>(merchandise realization, sponsors and partners advertising)</span></li>
-          <li>Innovative <br><span>(using of Blockchain technologies and Artificial Intelligence Software)</span>
-          </li>
-          <li>Charitable <br><span>(Support of Ukrainian Athletes)</span></li>
-        </ul>
-      </div>
-        <div class="about__preface">
-          <h1>Explanation</h1>
-        </div>
-        <div class="about__items">
-          <div class="item active left">
-            <div class="header">
-              <h1>What is ABA?</h1>
-                <% if(path === '/') { %>
-                    <h2>See the <a href="/about">About page</a></h2>
-                <%}%>
+        <div class="goals-overview">
+            <h2>New team running sport game</h2>
+            <div class="item fi">
+                <h1>modern</h1>
             </div>
-            <div class="content">
-              <img src="/img/info.png" alt="about-abc" />
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem
-                enim nobis quidem cupiditate, possimus dignissimos recusandae in
-                doloremque excepturi exercitationem earum cum commodi
-                praesentium libero perspiciatis. Autem illo dicta natus,
-                recusandae assumenda, nulla minus iste et dolore inventore,
-                saepe voluptate. <br />
+            <div class="item">
+                <h1>dynamic</h1>
+            </div>
+            <div class="item">
+                <h1>spectacular</h1>
+            </div>
+        </div>
+        <div class="goals">
+            <div class="goals__image">
+                <h1>Goals</h1>
+                <img src="/img/goals-img.jpg" alt="goals">
+            </div>
+            <ul>
+                <li>Sportive <br><span>(competitive, athletic, hardly predictable)</span></li>
+                <li>Popularizing <br><span>(the health, the new kind of sport and running, the renaissance of  running sport from the individual activity to the global team game)</span>
+                </li>
+                <li>Cultural <br><span>(share of run philosophy, lifestyle, fashion, principles of joining, team  building, friendship, support, development of the new subculture)</span>
+                </li>
+                <li>Social <br><span>(the new type of time spending, events and entertainments for all family,  col eagues, friends, with celebrity guests and show implants, fan’s  power, actual and influential trend)</span>
+                </li>
+                <li>Commercial <br><span>(merchandise realization, sponsors and partners advertising)</span></li>
+                <li>Innovative <br><span>(using of Blockchain technologies and Artificial Intelligence Software)</span>
+                </li>
+                <li>Charitable <br><span>(Support of Ukrainian Athletes)</span></li>
+            </ul>
+        </div>
+        <!--        stepper-->
+        <div class="stepper">
+            <div class="stepper__wrapper option-1 option-1-1">
+                <ol class="c-stepper">
+                    <li class="c-stepper__item active">
+                        <p class="c-stepper__desc">Some desc text</p>
+                    </li>
+                    <li class="c-stepper__item">
+                        <p class="c-stepper__desc">Some desc text</p>
+                    </li>
+                    <li class="c-stepper__item">
+                        <p class="c-stepper__desc">Some desc text</p>
+                    </li>
+                </ol>
+            </div>
+            <div class="step-content">
+                <div class="item active">
+                    <img src="/img/info.png" alt="about-abc"/>
+                    <div class="content">
+                        <h2>
+                            Another team running game
+                        </h2>
+                        <p>
+                        A new 1-mile team sport
+                        (1609 meters). Competitions can be held at the stadium, in the arena or in any
+                        which other city, according to the goals and objectives of the competition organizers. In the sports room
+                        in the team-running game, teams of runners compete with the goal of winning
+                        victory and win the battle (a 1-mile running team duel). </p>
 
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam
-                quis ratione, magnam perferendis a provident excepturi natus
-                doloremque officiis reiciendis? Odit fuga nobis quis corporis
-                magnam aliquam corrupti magni sequi. <br />
+                        <p> Sporty
+                            team running game designed to unite athletes and popularize
+                            running sports, formation of team spirit among children, youth and
+                            adults, which will contribute to the integrity of the individual in the collective consciousness and
+                            interaction
+                        </p>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="/img/info.png" alt="about-abc"/>
+                    <div class="content">
+                        <h2>
+                            Sports team running game
+                        </h2>
+                        <p>
+                            A new 1-mile team sport
+                            (1609 meters). Competitions can be held at the stadium, in the arena or in any
+                            which other city, according to the goals and objectives of the competition organizers. In the sports room
+                            in the team-running game, teams of runners compete with the goal of winning
+                            victory and win the battle (a 1-mile running team duel). </p>
 
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                Repellat provident exercitationem omnis modi perspiciatis
-                numquam veniam autem unde voluptas distinctio voluptate
-                repellendus illo vero, aspernatur excepturi, nesciunt iste harum
-                delectus.
-              </p>
+                        <p> Sporty
+                            team running game designed to unite athletes and popularize
+                            running sports, formation of team spirit among children, youth and
+                            adults, which will contribute to the integrity of the individual in the collective consciousness and
+                            interaction
+                        </p>
+                    </div>
+                </div>
             </div>
-          </div>
-          <div class="item center">
-            <div class="header">
-              <h1>What is ABM?</h1>
-              <% if(path === '/') { %>
-                <h2>See the <a href="/about">About page</a></h2>
-              <%}%>
-            </div>
-            <div class="content">
-              <img src="../../img/info.png" alt="about-abc" />
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem
-                enim nobis quidem cupiditate, possimus dignissimos recusandae in
-                doloremque excepturi exercitationem earum cum commodi
-                praesentium libero perspiciatis. Autem illo dicta natus,
-                recusandae assumenda, nulla minus iste et dolore inventore,
-                saepe voluptate. <br />
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam
-                quis ratione, magnam perferendis a provident excepturi natus
-                doloremque officiis reiciendis? Odit fuga nobis quis corporis
-                magnam aliquam corrupti magni sequi. <br />
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                Repellat provident exercitationem omnis modi perspiciatis
-                numquam veniam autem unde voluptas distinctio voluptate
-                repellendus illo vero, aspernatur excepturi, nesciunt iste harum
-                delectus.
-              </p>
-            </div>
-          </div>
-          <div class="item right">
-            <div class="header">
-              <h1>What is ABC?</h1>
-                <% if(path === '/') { %>
-                    <h2>See the <a href="/about">About page</a></h2>
-                <%}%>
-            </div>
-            <div class="content">
-              <img src="../../img/info.png" alt="about-abc" />
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem
-                enim nobis quidem cupiditate, possimus dignissimos recusandae in
-                doloremque excepturi exercitationem earum cum commodi
-                praesentium libero perspiciatis. Autem illo dicta natus,
-                recusandae assumenda, nulla minus iste et dolore inventore,
-                saepe voluptate. <br />
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam
-                quis ratione, magnam perferendis a provident excepturi natus
-                doloremque officiis reiciendis? Odit fuga nobis quis corporis
-                magnam aliquam corrupti magni sequi. <br />
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                Repellat provident exercitationem omnis modi perspiciatis
-                numquam veniam autem unde voluptas distinctio voluptate
-                repellendus illo vero, aspernatur excepturi, nesciunt iste harum
-                delectus.
-              </p>
-
-            </div>
-          </div>
         </div>
-        <div class="about__previews">
-          <div class="wrapper">
-            <div class="preview">
-              <h3>What is ABA?</h3>
-            </div>
-            <div class="preview">
-              <h3>What is ABM?</h3>
-            </div>
-            <div class="preview">
-              <h3>What is ABC?</h3>
-            </div>
-          </div>
-        </div>
-      </div>
-    </main>
-  <%- include('includes/footer.ejs') %>
-  <%- include('includes/menu.ejs') %>
-    <script src="js/about.js"></script>
-  <script src="js/menu.js"></script>
-  <script src="js/goals.js"></script>
-  <%- include('includes/end.ejs') %>
+    </div>
+</main>
+<%- include('includes/footer.ejs') %>
+<%- include('includes/menu.ejs') %>
+<script src="js/about.js"></script>
+<script src="js/menu.js"></script>
+<script src="js/goals.js"></script>
+<script src="js/stepper.js"></script>
+<%- include('includes/end.ejs') %>
