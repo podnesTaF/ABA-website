@@ -10,34 +10,29 @@
 
 .about__intro h1 {
   position: absolute;
-  top: 50px;
-  left: 50px;
-  font-size: 48px;
+  top: 3rem;
+  left: 3rem;
+  font-size: 3rem;
   color: gold;
-  padding: 10px;
+  padding: 0.8rem;
 }
 
 .about__intro .items {
   list-style-type: none;
   display: flex;
   flex-direction: column;
-  margin: 0 0 40px auto;
-  padding-top: 40px;
+  margin: 0 0 2.6rem auto;
+  padding-top: 2.6rem;
   max-width: 80%;
 }
 
 .about__intro .items li {
-  max-width: 600px;
-  margin: 20px;
+  max-width: 40rem;
+  margin: 1.3rem;
   justify-self: end;
   align-self: end;
   animation: slideIn 1s ease-in-out;
 }
-
-/*.about__intro .items li:first-child {*/
-/*    align-self: end;*/
-/*    justify-self: end;*/
-/*}*/
 
 .about__intro .items li:nth-child(2) {
   padding-right: 10%;
@@ -53,14 +48,14 @@
 }
 
 .about__intro .items li h4 {
-  font-size: 24px;
+  font-size: 1.5rem;
   color: black;
   margin: 0;
 }
 
 .about__intro .items li p {
-    font-size: 32px;
-    margin: 0;
+  font-size: 2rem;
+  margin: 0;
   width: 100%;
 }
 
@@ -92,8 +87,5 @@
 @media screen and (max-width: 992px) {
   .about__intro h1 {
     position: relative;
-    font-size: 48px;
-    color: gold;
-    padding: 10px;
   }
 }

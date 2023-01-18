@@ -11,6 +11,7 @@ body {
   font-size: 16px;
   background: url('/img/cells-bg.jpg') no-repeat center fixed;
   background-size: cover;
+  overflow-x: hidden;
 }
 
 header {
@@ -31,8 +32,8 @@ main {
   background-color: #fff;
   max-width: 1280px;
   margin: 0 auto;
-  border-left: 2px solid #ee342c;
-  border-right: 2px solid #ee342c;
+  /*border-left: 2px solid #ee342c;*/
+  /*border-right: 2px solid #ee342c;*/
 }
 
 .intro-image {
@@ -202,6 +203,19 @@ nav {
     margin-left: 20px;
     margin-right: 20px;
     cursor: pointer;
+  }
+}
+
+
+@media screen and (max-width: 768px) {
+  html {
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  html {
+    font-size: 10px;
   }
 }
 

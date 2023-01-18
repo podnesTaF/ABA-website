@@ -11,13 +11,13 @@
 }
 
 .competition .content>h2 {
-  font-size: 42px;
+  font-size: 2.5rem;
   padding: 20px 0;
   text-align: center;
 }
 
 .competition .content>p {
-  font-size: 20px;
+  font-size: 1.4rem;
   padding: 20px 0;
   text-align: center;
 }
@@ -34,11 +34,11 @@
 
 .statistic .item {
   margin-left: 20px;
-  width: 200px;
+  width: 12.2rem;
 }
 
 .statistic .item h2 {
-  font-size: 48px;
+  font-size: 3rem;
 }
 
 .statistic .item p {
@@ -56,9 +56,8 @@
 }
 
 .competition .wrapper .wrapper-col {
-  width: 910px;
+  max-width: 56rem;
 }
-
 
 .wrapper h2 {
   font-size: 32px;
@@ -68,16 +67,33 @@
   background: url('/img/counties.jpg') no-repeat top right;
   margin-bottom: 30px;
   height: 400px;
+  position: relative;
+  color: white;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.participants .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: -1;
 }
 
 .participants .lists {
   display: flex;
   max-width: 700px;
   flex-wrap: wrap;
+  justify-content: center;
 }
 
 .participants .lists ul {
-  width: 200px;
   margin-top: 20px;
   margin-left: 50px;
 }
@@ -105,30 +121,11 @@
   margin-left: 40px;
 }
 
-.program {
-  background: url('/img/program.jpg') no-repeat center right;
-  background-size: contain;
-}
-
-.program h3 {
-  font-size: 24px;
-  margin: 20px 10px;
-}
-
-.program ul {
-  margin-left: 30px;
-  padding-bottom: 30px;
-}
-
-.program ul li:not(:last-child) {
-  margin-bottom: 8px;
-}
-
 .preview {
   position: sticky;
   top: 30px;
-  right: 19px;
-  width: 300px;
+  right: 50px;
+  width: 400px;
   height: 100%;
   background-color: #ee342c;
   display: flex;
@@ -159,3 +156,97 @@
 .competition .preview .item a span {
   color: #11111b;
 }
+
+.program {
+  background: url('/img/program.jpg') no-repeat top right;
+  background-size: contain;
+  position: relative;
+}
+
+.program h3 {
+  font-size: 24px;
+  margin: 20px 10px;
+}
+
+.program ul {
+  margin-left: 30px;
+  padding-bottom: 30px;
+}
+
+.program ul li:not(:last-child) {
+  margin-bottom: 8px;
+}
+
+
+@media screen and (max-width: 1200px){
+  .competition .wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .preview {
+    position: initial;
+    max-width: 100%;
+    width: auto;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 20px 0;
+  }
+
+  .competition .preview .item {
+    text-align: center;
+  }
+
+  .competition .preview .item:not(:last-child) {
+    border-right: 1px solid gold;
+  }
+
+  .preview .item h2{
+    margin-bottom: 20px;
+  }
+
+  .program {
+    color: white;
+    padding: 40px;
+  }
+
+  .program .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 0;
+  }
+
+  .program h3,
+  .program ul{
+    z-index: 1;
+    position: relative;
+  }
+}
+
+@media screen and (max-width: 720px){
+  .program {
+    background-size: cover;
+  }
+}
+
+@media screen and (max-width: 550px){
+  .preview {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .competition .preview .item {
+    text-align: start;
+    padding-bottom: 20px;
+  }
+
+  .competition .preview .item:not(:last-child) {
+    border-right: none;
+    border-bottom: 1px solid gold;
+  }
+}
+
