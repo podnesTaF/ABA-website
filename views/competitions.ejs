@@ -5,26 +5,26 @@
       rel="stylesheet"
       href="css/competitions.css"
     />
-    <link rel="stylesheet" href="css/comp-page.css" />
+    <link rel="stylesheet" href="scss/competitions.css" />
     <title>About Page</title>
   </head>
   <body>
   <%- include('includes/header.ejs') %>
     <main>
-      <div class="competitions">
-        <h1>ABM Competitions</h1>
+      <div class="competitions page">
+        <h1 class="competitions__title">ABM Competitions</h1>
         <div class="competitions__items">
-          <div class="item">
-            <a href="/competitions/cup-benelux">
-              <img src="../../img/cup-benelux.jpg" alt="cup-benelux" />
+          <div class="competitions__items--item">
+            <a class="competitions__items--item--link" href="/competitions/cup-benelux">
+              <img src="/img/cup-benelux.jpg" alt="cup-benelux"/>
             </a>
-            <div class="content">
-              <a href="/competitions/cup-benelux"><h1>Cup Benelux 2023</h1></a>
-              <p>
+            <div class="competitions__items--item_content">
+              <a class="competitions__items--item_content--link" href="/competitions/cup-benelux"><h1>Cup Benelux 2023</h1></a>
+              <p class="competitions__items--item_content--paragraph">
                 Cup Benelux is a debut of ABM in Europe. Renaissance of running
                 sport from the individual activity to the global team game.
               </p>
-              <div class="date">
+              <div class="competitions__items--item_content--date">
                 <p>24 <span>03/2023</span> - 25 <span>03/2023</span></p>
               </div>
             </div>

@@ -1,0 +1,15 @@
+
+.full-bg {
+  background: linear-gradient(90deg, rgba(238, 52, 44, 0.6) 0%, rgba(255, 255, 255, 1) 35%, rgba(255, 255, 255, 1) 65%, rgba(238, 52, 44, 0.6) 100%);;
+}
+
+.footer {
+  background-color: #fff;
+  color: black;
+  border-left: 2px solid #ee342c;
+  border-right: 2px solid #ee342c;
+  &__items--item-list_item-link {
+    color: black;
+    text-decoration: none;
+  }
+}

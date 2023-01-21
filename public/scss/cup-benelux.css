@@ -1,70 +1,59 @@
-.competition h1 {
+.competition__image {
+  width: 100%;
+  height: auto;
+}
+
+.competition__title {
   background-color: #ee342c;
   font-size: 42px;
   color: gold;
   padding: 20px;
 }
-
-.competition img {
-  width: 100%;
-  height: auto;
-}
-
-.competition .content>h2 {
-  font-size: 2.5rem;
-  padding: 20px 0;
-  text-align: center;
-}
-
-.competition .content>p {
+.competition__paragraph {
   font-size: 1.4rem;
   padding: 20px 0;
   text-align: center;
 }
-
-
-
-
-.statistic {
+.competition__statistic {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
 }
-
-.statistic .item {
+.competition__statistic_item {
   margin-left: 20px;
   width: 12.2rem;
 }
-
-.statistic .item h2 {
+.competition__statistic_item h2 {
   font-size: 3rem;
 }
-
-.statistic .item p {
+.competition__statistic_item p {
   background-color: #ee342c;
   color: gold;
   padding: 7px;
 }
 
-.competition .wrapper {
+.participants {
   width: 100%;
   padding: 20px;
   position: relative;
   display: flex;
   justify-content: space-between;
 }
-
-.competition .wrapper .wrapper-col {
+.participants__info {
   max-width: 56rem;
 }
-
-.wrapper h2 {
-  font-size: 32px;
+.participants__info--overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: -1;
 }
-
-.participants {
-  background: url('/img/counties.jpg') no-repeat top right;
+.participants__info--item {
+  background: url("/img/counties.jpg") no-repeat top right;
   margin-bottom: 30px;
   height: 400px;
   position: relative;
@@ -75,53 +64,37 @@
   justify-content: center;
   align-items: center;
 }
-
-.participants .overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    background-color: rgba(0, 0, 0, 0.5);
-    z-index: -1;
+.participants__info--item--title {
+  font-size: 32px;
 }
-
-.participants .lists {
+.participants__info--item--lists {
   display: flex;
   max-width: 700px;
   flex-wrap: wrap;
   justify-content: center;
 }
-
-.participants .lists ul {
+.participants__info--item--lists_list {
   margin-top: 20px;
   margin-left: 50px;
 }
-
-.teams .lists {
+.participants__info--teams--lists {
   margin-top: 20px;
 }
-
-
-.teams .lists ul {
+.participants__info--teams--lists_list {
   margin-left: 20px;
 }
-
-.teams .lists ul li {
+.participants__info--teams--lists_list li {
   font-size: 18px;
   margin-top: 20px;
 }
-
-.teams .lists ul li:first-child {
+.participants__info--teams--lists_list li:first-child {
   font-size: 24px;
   list-style-type: none;
 }
-
-.teams .lists ul li:not(:first-child) {
+.participants__info--teams--lists_list li:not(:first-child) {
   margin-left: 40px;
 }
-
-.preview {
+.participants__preview {
   position: sticky;
   top: 30px;
   right: 50px;
@@ -134,57 +107,47 @@
   border-radius: 10px;
   color: gold;
 }
-
-.competition .preview .item {
+.participants__preview--item {
   width: 100%;
   margin: 10px 0;
 }
-
-.competition .preview .item a {
+.participants__preview--item a {
   color: #11111b;
   text-decoration: none;
 }
-
-.competition .preview .item a:hover {
+.participants__preview--item a:hover {
   opacity: 0.5;
 }
-
-.competition .preview .item p {
+.participants__preview--item a span {
   color: #11111b;
 }
-
-.competition .preview .item a span {
+.participants__preview--item p {
   color: #11111b;
 }
 
 .program {
-  background: url('/img/program.jpg') no-repeat top right;
+  background: url("/img/program.jpg") no-repeat top right;
   background-size: contain;
   position: relative;
 }
-
-.program h3 {
+.program__title {
   font-size: 24px;
   margin: 20px 10px;
 }
-
-.program ul {
+.program__list {
   margin-left: 30px;
   padding-bottom: 30px;
 }
-
-.program ul li:not(:last-child) {
+.program__list li:not(:last-child) {
   margin-bottom: 8px;
 }
 
-
-@media screen and (max-width: 1200px){
-  .competition .wrapper {
+@media screen and (max-width: 1200px) {
+  .participants {
     flex-direction: column;
     align-items: center;
   }
-
-  .preview {
+  .participants__preview {
     position: initial;
     max-width: 100%;
     width: auto;
@@ -192,25 +155,20 @@
     justify-content: space-between;
     margin: 20px 0;
   }
-
-  .competition .preview .item {
+  .participants__preview--item {
     text-align: center;
   }
-
-  .competition .preview .item:not(:last-child) {
+  .participants__preview--item:not(:last-child) {
     border-right: 1px solid gold;
   }
-
-  .preview .item h2{
+  .participants__preview--item h2 {
     margin-bottom: 20px;
   }
-
   .program {
     color: white;
     padding: 40px;
   }
-
-  .program .overlay {
+  .program__overlay {
     position: absolute;
     top: 0;
     left: 0;
@@ -219,34 +177,29 @@
     background-color: rgba(0, 0, 0, 0.6);
     z-index: 0;
   }
-
-  .program h3,
-  .program ul{
+  .program__title, .program__list {
     z-index: 1;
     position: relative;
   }
 }
-
-@media screen and (max-width: 720px){
+@media screen and (max-width: 720px) {
   .program {
     background-size: cover;
   }
 }
-
-@media screen and (max-width: 550px){
-  .preview {
+@media screen and (max-width: 550px) {
+  .participants__preview {
     display: flex;
     flex-direction: column;
   }
-
-  .competition .preview .item {
+  .participants__preview--item {
     text-align: start;
     padding-bottom: 20px;
   }
-
-  .competition .preview .item:not(:last-child) {
+  .participants__preview--item:not(:last-child) {
     border-right: none;
     border-bottom: 1px solid gold;
   }
 }
 
+/*# sourceMappingURL=cup-benelux.css.map */

@@ -1,0 +1,60 @@
+.competitions {
+  background-color: #11111b;
+  padding-bottom: 3rem;
+  &.page {
+    background-color: #fff;
+  }
+  &__title {
+    text-align: end;
+    font-size: 3rem;
+    padding: 1.2rem;
+    margin-bottom: 3rem;
+    background-color: #ee342c;
+    color: gold;
+  }
+  &__items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    &--item {
+      max-width: 38rem;
+      background-color: azure;
+      padding: 0.7rem;
+      border-radius: 0.7rem;
+      box-shadow: 0 0 5px 5px rgb(0, 0, 0, 0.1);
+      &--link {
+        img {
+          width: 100%;
+          height: 19rem;
+          object-fit: cover;
+        }
+      }
+      &_content {
+        &--link {
+          text-decoration: none;
+          color: #11111b;
+          h1 {
+            font-size: 2rem;
+            margin: 0;
+          }
+        }
+        &--paragraph {
+          font-size: 1.3rem;
+          margin-top: 0.6rem;
+        }
+        &--date {
+          margin: 0.6rem;
+          p {
+            font-weight: 700;
+            text-align: end;
+            span {
+              font-size: 1rem;
+            }
+          }
+        }
+      }
+    }
+  }
+
+}

@@ -1,22 +1,11 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,400&display=swap");
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  text-decoration: none;
-}
-
-body {
-  font-size: 16px;
-}
-
 .competitions {
   background-color: #11111b;
   padding-bottom: 3rem;
 }
-
-.competitions h1 {
+.competitions.page {
+  background-color: #fff;
+}
+.competitions__title {
   text-align: end;
   font-size: 3rem;
   padding: 1.2rem;
@@ -24,46 +13,45 @@ body {
   background-color: #ee342c;
   color: gold;
 }
-
 .competitions__items {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
 }
-
-.competitions__items .item {
+.competitions__items--item {
   max-width: 38rem;
   background-color: azure;
   padding: 0.7rem;
   border-radius: 0.7rem;
+  box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.1);
 }
-
-.competitions__items .item img {
+.competitions__items--item--link img {
   width: 100%;
   height: 19rem;
   object-fit: cover;
 }
-
-.competitions__items .item .content h1 {
+.competitions__items--item_content--link {
+  text-decoration: none;
+  color: #11111b;
+}
+.competitions__items--item_content--link h1 {
   font-size: 2rem;
   margin: 0;
 }
-
-.competitions__items .item .content p {
+.competitions__items--item_content--paragraph {
   font-size: 1.3rem;
   margin-top: 0.6rem;
 }
-
-.competitions__items .item .content .date {
+.competitions__items--item_content--date {
   margin: 0.6rem;
 }
-
-.competitions__items .item .content .date p {
+.competitions__items--item_content--date p {
   font-weight: 700;
   text-align: end;
 }
-
-.competitions__items .item .content .date span {
+.competitions__items--item_content--date p span {
   font-size: 1rem;
 }
+
+/*# sourceMappingURL=competitions.css.map */
