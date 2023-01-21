@@ -1,7 +1,7 @@
 /** @format */
 
-const slides = document.querySelector('.slide-items').children;
-const prev = document.querySelector('.prev');
+const slides = document.querySelectorAll('.slider__items--item')
+const prev = document.querySelector(' .prev');
 const next = document.querySelector('.next');
 const totalSlides = slides.length;
 let index = 0;
@@ -51,13 +51,13 @@ function slide(direction) {
 let width = 100 / totalSlides;
 // slide info
 function slideInfo() {
-  document.querySelector('.inner').style.width = (index + 1) * width + '%';
+  document.querySelector('.slider__info--meter_inner').style.width = (index + 1) * width + '%';
 }
 
 // next slide progress meter
 
 function progress() {
-  document.querySelector('.progress').innerHTML = '';
+  document.querySelector('.slider__progress').innerHTML = '';
   const div = document.createElement('div');
   div.style.height = '5px';
   div.style.width = '0px';
@@ -67,7 +67,7 @@ function progress() {
   div.style.backgroundColor = '#ee342c';
   div.id = 'progress';
   div.style.animation = 'progress ' + duration / 1000 + 's linear';
-  document.querySelector('.progress').appendChild(div);
+  document.querySelector('.slider__progress').appendChild(div);
 }
 
 // auto slide

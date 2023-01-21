@@ -1,0 +1,124 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,400&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  background: url("/img/cells-bg.jpg") no-repeat center fixed;
+  background-size: cover;
+  overflow-x: hidden;
+}
+
+main {
+  background-color: #fff;
+  max-width: 1280px;
+  margin: 0 auto;
+  /*border-left: 2px solid #ee342c;*/
+  /*border-right: 2px solid #ee342c;*/
+}
+
+.menu {
+  display: none;
+  position: fixed;
+  left: 0;
+  top: 0;
+  overflow-y: hidden;
+  width: 300px;
+  max-width: 90%;
+  height: 100vh;
+  background-color: #11111b;
+  z-index: 12;
+}
+.menu__close {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+}
+.menu__logo {
+  margin: 20px 10px;
+}
+.menu__nav {
+  background: initial;
+  width: 100%;
+  margin: 20px 0;
+  padding: 0 10px;
+}
+.menu__nav--list--item {
+  margin: 10px 0;
+}
+.menu__nav--list--item.active {
+  background-color: #ee342c;
+  color: gold;
+}
+.menu__nav--list--item_link {
+  text-decoration: none;
+  color: white;
+  font-size: 24px;
+  font-weight: 700;
+}
+.menu__nav--list--item_link.active {
+  color: #ee342c;
+}
+
+.menu__overlay {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: none;
+  z-index: 10;
+  overflow-y: scroll;
+}
+
+@media screen and (max-width: 992px) {
+  .header__nav--list {
+    display: none;
+  }
+  .header__burger {
+    display: block;
+    width: 40px;
+    height: 40px;
+    margin-left: 20px;
+    margin-right: 20px;
+    cursor: pointer;
+  }
+}
+@media screen and (max-width: 768px) {
+  html {
+    font-size: 12px;
+  }
+}
+@media screen and (max-width: 480px) {
+  html {
+    font-size: 10px;
+  }
+}
+@keyframes openMenu {
+  0% {
+    transform: translateX(-350px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+@keyframes closeMenu {
+  0% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(-350px);
+    opacity: 0;
+  }
+}
+
+/*# sourceMappingURL=index.css.map */

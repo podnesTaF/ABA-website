@@ -1,6 +1,5 @@
 <footer class="footer">
-    <div class="wrapper">
-        <div class="item logo">
+        <div class="footer__items--item logo">
             <%  if(theme === 'light') { %>
                 <img src="/img/logo-white.png" alt="logo" />
             <%} else {%>
@@ -8,23 +7,22 @@
             <%}%>
             <p>&copy; 2023 Ace Battle</p>
         </div>
-        <div class="items">
-            <div class="item">
+        <div class="footer__items">
+            <div class="footer__items--item">
                 <h3>Contact</h3>
                 <p>+32 (047) 603 24 19</p>
             </div>
-            <div class="item">
+            <div class="footer__items--item">
                 <h3>Send an email</h3>
                 <p>apodnes@gmail.com</p>
             </div>
-            <div class="item">
+            <div class="footer__items--item">
                 <h3>Follow</h3>
-                <ul class="social">
-                    <li><a href="#"> Instagram </a></li>
-                    <li><a href="#"> Youtube </a></li>
-                    <li><a href="#"> Facebook </a></li>
+                <ul class="footer__items--item-list">
+                    <li class="footer__items--item-list_item"><a class="footer__items--item-list_item-link" href="#"> Instagram </a></li>
+                    <li class="footer__items--item-list_item"><a class="footer__items--item-list_item-link" href="#"> Youtube </a></li>
+                    <li class="footer__items--item-list_item"><a class="footer__items--item-list_item-link" href="#"> Facebook </a></li>
                 </ul>
             </div>
         </div>
-    </div>
 </footer>

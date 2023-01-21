@@ -1,26 +1,24 @@
-<header>
-    <div class="intro-image">
-        <a href="#"><img src="<%= introImage %>" alt="main-logo" /></a>
+<header class="header">
+    <div class="header__intro">
+        <a href="#"><img class="header__intro--logo" src="<%= introImage %>" alt="main-logo" /></a>
     </div>
-    <nav>
-        <div class="nav_wrapper">
-            <img src="/img/logo.svg" alt="logo" />
-            <ul class="header__nav-list">
-                <li><a class="<%= path === '/' ? 'active' : '' %>" href="/">Main</a></li>
-                <li><a class="<%= path === '/about' ? 'active' : '' %>" href="/about">About ABA</a></li>
-                <li><a class="<%= path === '/rules' ? 'active' : '' %>" href="/rules">Rules</a></li>
-                <li>
-                    <a class="<%= path === '/competitions' ? 'active' : '' %>" href="/competitions">Competitions</a>
-                </li>
-                <li><a href="#">EN</a></li>
-            </ul>
-            <div class="burger">
-                <svg viewBox="0 0 384 384">
-                    <rect x="0" y="277.333" width="384" height="42.667" fill='gold'></rect>
-                    <rect x="0" y="170.667" width="384" height="42.667" fill='gold'></rect>
-                    <rect x="0" y="64" width="384" height="42.667" fill='gold'></rect>
-                </svg>
-            </div>
+    <nav class="header__nav">
+        <img  class='header__nav--logo' src="/img/logo.svg" alt="logo" />
+        <ul class="header__nav--list">
+            <li class="header__nav--list--item"><a class="header__nav--list--item_link <%= path === '/' ? 'active' : '' %>" href="/">Main</a></li>
+            <li class="header__nav--list--item"><a class="header__nav--list--item_link <%= path === '/about' ? 'active' : '' %>" href="/about">About ABA</a></li>
+            <li class="header__nav--list--item"><a class="header__nav--list--item_link <%= path === '/rules' ? 'active' : '' %>" href="/rules">Rules</a></li>
+            <li class="header__nav--list--item">
+                <a class="header__nav--list--item_link <%= path === '/competitions' ? 'active' : '' %>" href="/competitions">Competitions</a>
+            </li>
+            <li class="header__nav--list--item"><a class="header__nav--list--item_link" href="#">EN</a></li>
+        </ul>
+        <div class="header__burger">
+            <svg viewBox="0 0 384 384">
+                <rect x="0" y="277.333" width="384" height="42.667" fill='gold'></rect>
+                <rect x="0" y="170.667" width="384" height="42.667" fill='gold'></rect>
+                <rect x="0" y="64" width="384" height="42.667" fill='gold'></rect>
+            </svg>
         </div>
     </nav>
 </header>

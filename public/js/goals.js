@@ -1,5 +1,5 @@
-const wrapper = document.querySelector('.goals-overview');
-const goals = wrapper.querySelectorAll('.item');
+const wrapper = document.querySelector('.goals__overview');
+const goals = document.querySelectorAll('.goals__overview--item');
 
 
 

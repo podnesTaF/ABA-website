@@ -1,8 +1,8 @@
 const menu = document.querySelector('.menu');
-const openBtn = document.querySelector('.burger');
-const close = document.querySelector('.close');
+const openBtn = document.querySelector('.header__burger');
+const close = document.querySelector('.menu__close');
 const overlay = document.querySelector('.menu__overlay');
-const menuLi = menu.querySelectorAll('.menu li');
+const menuLi = menu.querySelectorAll('.menu__nav--list--item');
 
 openBtn.addEventListener('click', () => {
     menu.style.animation = 'openMenu 0.4s';

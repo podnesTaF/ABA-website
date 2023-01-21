@@ -1,6 +1,6 @@
-const stepperItems = document.querySelectorAll('.c-stepper__item');
-const contentItems = document.querySelectorAll('.step-content .item');
-const descs = document.querySelectorAll('.c-stepper__desc');
+const stepperItems = document.querySelectorAll('.stepper__wrapper--list--item');
+const contentItems = document.querySelectorAll('.stepper__content--item');
+const descs = stepperItems.querySelectorAll('p');
 
 let stepperIdx = 0
 stepperItems.forEach((item, i) => {

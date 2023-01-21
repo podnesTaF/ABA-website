@@ -1,0 +1,97 @@
+.header {
+  background-size: cover;
+  &__intro {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &--logo {
+      height: 100px;
+    }
+  }
+  &__nav {
+    max-width: 1280px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-left: 2px solid #ee342c;
+    border-right: 2px solid #ee342c;
+    background-color: #11111b;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    position: relative;
+
+    &--logo {
+      height: 70px;
+      padding: 10px;
+    }
+
+    &--list {
+      display: flex;
+      height: 100%;
+      list-style: none;
+      &--item {
+        display: flex;
+        margin-left: 20px;
+        height: 75px;
+        align-items: center;
+        cursor: pointer;
+        &:last-child {
+          margin-right: 20px;
+
+          .header__nav--list--item_link {
+            height: fit-content;
+            align-self: center;
+            background-color: gray;
+            border-radius: 5px;
+            border: none;
+          }
+        }
+        &:hover {
+          &:not(:last-child) {
+            .header__nav--list--item_link {
+              border-bottom: 2px solid #ee342c;
+              border-top: 2px solid #ee342c;
+              color: #ee342c;
+            }
+          }
+        }
+
+        &_link {
+          font-size: 18px;
+          font-weight: 700;
+          text-decoration: none;
+          color: white;
+          display: flex;
+          padding: 7px;
+          height: 75px;
+          align-items: center;
+
+          &.active {
+            border-bottom: 2px solid #ee342c;
+            border-top: 2px solid #ee342c;
+            color: #ee342c;
+          }
+          &:active {
+            transform: scale(0.95);
+          }
+        }
+      }
+    }
+  }
+
+  &__burger {
+    display: none;
+  }
+}
+
+.full-bg {
+  background :linear-gradient(90deg, rgba(238, 52, 44, 0.6) 0%, rgba(17, 17, 27, 1) 35%, rgba(17, 17, 27, 1) 65%, rgba(238, 52, 44, 0.6) 100%);
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: -1;
+}

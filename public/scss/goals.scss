@@ -1,0 +1,129 @@
+.goals {
+  &__overview {
+    background-color: #ee342c;
+    padding: 1.3rem;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: space-between;
+    position: relative;
+
+    &--title {
+      font-size: 2.3rem;
+      color: gold;
+    }
+
+    &--item {
+      font-size: 3rem;
+      color: #11111b;
+      align-self: center;
+      justify-self: center;
+
+      &.first {
+        align-self: start;
+        justify-self: start;
+        color: white;
+      }
+
+      &:last-child {
+        align-self: end;
+        justify-self: end;
+        color: gold;
+      }
+    }
+  }
+
+  &__wrapper {
+    background: url("/img/goals_bg.jpg") no-repeat center center;
+    background-size: cover;
+    display: flex;
+    justify-content: space-between;
+
+    &--image {
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+      width: 100%;
+      align-self: end;
+
+      h1 {
+        font-size: 6rem;
+        color: gold;
+        transform: rotate(-20deg);
+      }
+
+      img {
+        object-fit: contain;
+        align-self: end;
+        height: 100%;
+        width: 80%;
+      }
+    }
+
+    &--list {
+      flex-shrink: 0.3;
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+      width: 80%;
+      justify-content: space-around;
+      list-style: none;
+
+      &--item {
+        font-size: 2rem;
+        color: gold;
+        justify-self: center;
+        padding: 0.6rem 1.2rem;
+        border-left: 2px solid gold;
+
+        span {
+          font-size: 1rem;
+          color: black;
+          align-self: center;
+          justify-self: center;
+        }
+      }
+    }
+  }
+}
+
+
+@media screen and (max-width: 992px) {
+  .goals__wrapper--image {
+    img {
+      width: 100%;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .goals {
+    &__wrapper {
+      display: block;
+      &--image {
+        h1 {
+          align-self: center;
+          transform: rotate(0);
+        }
+        img {
+          display: none;
+        }
+      }
+    }
+
+    &__overview {
+      height: 80vh;
+    }
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .goals__overview {
+    height: 60vh;
+    &--item {
+      font-size: 28px;
+      align-self: start !important;
+      justify-self: start !important;
+    }
+  }
+}

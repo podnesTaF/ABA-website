@@ -1,0 +1,108 @@
+.goals__overview {
+  background-color: #ee342c;
+  padding: 1.3rem;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: space-between;
+  position: relative;
+}
+.goals__overview--title {
+  font-size: 2.3rem;
+  color: gold;
+}
+.goals__overview--item {
+  font-size: 3rem;
+  color: #11111b;
+  align-self: center;
+  justify-self: center;
+}
+.goals__overview--item.first {
+  align-self: start;
+  justify-self: start;
+  color: white;
+}
+.goals__overview--item:last-child {
+  align-self: end;
+  justify-self: end;
+  color: gold;
+}
+.goals__wrapper {
+  background: url("/img/goals_bg.jpg") no-repeat center center;
+  background-size: cover;
+  display: flex;
+  justify-content: space-between;
+}
+.goals__wrapper--image {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  align-self: end;
+}
+.goals__wrapper--image h1 {
+  font-size: 6rem;
+  color: gold;
+  transform: rotate(-20deg);
+}
+.goals__wrapper--image img {
+  object-fit: contain;
+  align-self: end;
+  height: 100%;
+  width: 80%;
+}
+.goals__wrapper--list {
+  flex-shrink: 0.3;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 80%;
+  justify-content: space-around;
+  list-style: none;
+}
+.goals__wrapper--list--item {
+  font-size: 2rem;
+  color: gold;
+  justify-self: center;
+  padding: 0.6rem 1.2rem;
+  border-left: 2px solid gold;
+}
+.goals__wrapper--list--item span {
+  font-size: 1rem;
+  color: black;
+  align-self: center;
+  justify-self: center;
+}
+
+@media screen and (max-width: 992px) {
+  .goals__wrapper--image img {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .goals__wrapper {
+    display: block;
+  }
+  .goals__wrapper--image h1 {
+    align-self: center;
+    transform: rotate(0);
+  }
+  .goals__wrapper--image img {
+    display: none;
+  }
+  .goals__overview {
+    height: 80vh;
+  }
+}
+@media screen and (max-width: 480px) {
+  .goals__overview {
+    height: 60vh;
+  }
+  .goals__overview--item {
+    font-size: 28px;
+    align-self: start !important;
+    justify-self: start !important;
+  }
+}
+
+/*# sourceMappingURL=goals.css.map */

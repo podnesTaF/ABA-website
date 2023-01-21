@@ -1,7 +1,7 @@
 <!-- @format -->
 
 <%- include('includes/head.ejs') %>
-    <link rel="stylesheet" href="css/rules.css" />
+    <link rel="stylesheet" href="scss/rules.css" />
     <title>ABA - rules</title>
   </head>
   <body>
@@ -9,25 +9,25 @@
     <main>
       <div class="rules">
       <div class="rules__intro">
-        <h1>
+        <h1 class="rules__intro--title">
           Sports team running game BATTLE MILE
         </h1>
-        <div class="rules__intro-content">
+        <div class="rules__intro--content">
           <p>- this is a new team-running look
             a one-mile sport whose competitions can be held in a stadium, in an arena or in
             any other city, according to the goals and objectives of the organizers of the competition.</p>
-          <div class="overlay">
+          <div class="rules__intro--content_overlay">
 
           </div>
         </div>
       </div>
         <div class="rules__items">
-          <h1>Ace Battle Mile rules</h1>
-          <div class="item">
-            <div class="content">
-              <h2>Rules</h2>
+          <h1 class="rules__items--title">Ace Battle Mile rules</h1>
+          <div class="rules__items--item">
+            <div class="rules__items--item_content">
+              <h2 class="rules__items--item_content--title">Rules</h2>
               <article>
-                <p>
+                <p class="rules__items--item_content--paragraph">
                   Competitions are team competitions. 2 teams of five athletes each
                   go to the start of the race. The distance that has to be reached
                   is a mile, which in numbers equals 1609 meters and 34 centimeters.
@@ -38,13 +38,13 @@
                   period. This allows the team to control their position and quickly
                   start a tactical exit to remoteness.
                 </p>
-                <p>
+                <p class="rules__items--item_content--paragraph">
                   The most interesting thing: each team has two spare participants,
                   the so-called "Jokers" (who are in the "corridor"), they have the
                   right to replace any member of their team once at any stage of the
                   distance for any segment, BUT up to the finish line
                 </p>
-                <p>
+                <p class="rules__items--item_content--paragraph">
                   The team that shows the best combined time of all participants
                   will win! If the teams showed the same finish time to the
                   thousandth, the victory is won by the team whose representative
@@ -52,25 +52,25 @@
                 </p>
               </article>
             </div>
-            <img src="../../img/rules-symbol.jpg" alt="symbol" />
+            <img class="rules__items--item_image" src="../../img/rules-symbol.jpg" alt="symbol" />
           </div>
-          <div class="item">
-            <img src="../../img/rules-teams.jpg" alt="rules-teams" />
-            <div class="content">
-              <h2>Team</h2>
+          <div class="rules__items--item">
+            <img class="rules__items--item_image" src="../../img/rules-teams.jpg" alt="rules-teams" />
+            <div class="rules__items--item_content">
+              <h2 class="rules__items--item_content--title">Team</h2>
              <article>
-               <p>The team should consist of 7 athletes (5 main + 2 jokers).</p>
-               <p>
+               <p class="rules__items--item_content--paragraph">The team should consist of 7 athletes (5 main + 2 jokers).</p>
+               <p class="rules__items--item_content--paragraph">
                  At the same time, professional teams have one representative of
                  different age categories:
                </p>
-               <ul>
-                 <li>
+               <ul class="rules__items--item_content--list">
+                 <li class="rules__items--item_content--list-item">
                    <p>
                      U18 (16-17 years old inclusive on the day of the competition),
                    </p>
                  </li>
-                 <li>
+                 <li class="rules__items--item_content--list-item">
                    <p>
                      U20 (18-19 years old inclusive on the day of the competition),
                    </p>
@@ -80,20 +80,20 @@
                      U23 (20-22 years old inclusive on the day of the competition),
                    </p>
                  </li>
-                 <li>
+                 <li class="rules__items--item_content--list-item">
                    <p>
                      adult athletes (23-35 years inclusive on the day of the
                      competition),
                    </p>
                  </li>
-                 <li>
+                 <li class="rules__items--item_content--list-item">
                    <p>
                      and jokers, who replaces one of the members of his team over
                      the distance, he can belong only to the adult age category.
                    </p>
                  </li>
                </ul>
-               <p>
+               <p class="rules__items--item_content--paragraph">
                  Amateur teams are formed without age groups and cannot be equipped
                  with participants who competed at the official starts of the
                  Athletics Federation of Ukraine at the level of the Ukrainian
