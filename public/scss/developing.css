@@ -51,4 +51,16 @@ body {
   object-fit: cover;
 }
 
+@media screen and (max-width: 992px) {
+  .main {
+    flex-direction: column-reverse;
+  }
+  .main .developing {
+    max-width: 80%;
+  }
+  .main .image {
+    max-width: 80%;
+  }
+}
+
 /*# sourceMappingURL=developing.css.map */
