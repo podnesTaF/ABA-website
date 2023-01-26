@@ -4,7 +4,16 @@ const express = require('express');
 
 const router = express.Router();
 
+
 router.get('/', (req, res) => {
+    res.render('developing', {
+      pageTitle: 'Ace Battle Association',
+      path: '/',
+      theme: 'dark',
+      introImage: '/img/main-logo.png',
+    });
+})
+router.get('/main', (req, res) => {
   res.render('index', {
     pageTitle: 'ABA - main',
     path: '/',
