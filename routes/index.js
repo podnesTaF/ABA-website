@@ -13,7 +13,7 @@ router.get('/', (req, res) => {
       introImage: '/img/main-logo.png',
     });
 })
-router.get('/main', (req, res) => {
+router.get('/s', (req, res) => {
   res.render('index', {
     pageTitle: 'ABA - main',
     path: '/',
