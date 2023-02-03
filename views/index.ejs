@@ -4,115 +4,117 @@
 <link rel="stylesheet" href="/scss/slider.css"/>
 <link rel="stylesheet" href="/scss/competitions.css"/>
 <link rel="stylesheet" href="/scss/goals.css">
+<link rel="stylesheet" href="/scss/intro.css">
 </head>
 <body>
 <%- include('./includes/header.ejs') %>
 <main>
-    <div class="slider">
-        <div class="slider__items">
-            <div class="slider__items--item active">
-                <a class="slider__items--item_link" href="/competitions/cup-benelux">
-                    <div
-                            class="slider__items--item_image"
-                            style="background-image: url('/img/cup-benelux.jpg')"
-                    ></div>
-                    <div class="slider__items--item_caption">
-                        <div class="slider__items--item_caption-text">
-                            <h1>Cup Benelux</h1>
-                            <p>About Competitions March 2023</p>
-                        </div>
-                    </div>
-                </a>
-            </div>
-
-            <div class="slider__items--item">
-                <a class="slider__items--item_link" href="/about">
-                    <div
-                            class="slider__items--item_image"
-                            style="background-image: url('/img/info.png')"
-                    ></div>
-                    <div class="slider__items--item_caption">
-                        <div class="slider__items--item_caption-text">
-                            <h1>About Ace Battle</h1>
-                            <p>Explore Ace Battle Organizations</p>
-                        </div>
-                    </div>
-                </a>
-            </div>
-
-            <div class="slider__items--item">
-                <a class="slider__items--item_link" href="/rules">
-                    <div
-                            class="slider__items--item_image"
-                            style="background-image: url('/img/rules2.png')"
-                    ></div>
-                    <div class="slider__items--item_caption">
-                        <div class="slider__items--item_caption-text">
-                            <h1>Rules</h1>
-                            <p>Explore rules of Ace Battle Mile</p>
-                        </div>
-                    </div>
-                </a>
+    <section class="intro">
+       <div class="intro__article">
+           <div class="intro__article__slogan">
+               <div class="intro__article__slogan--list">
+                   <div class="intro__article__slogan--list-item">
+                       <h2>
+                           Modern
+                       </h2>
+                   </div>
+                   <div class="intro__article__slogan--list-item">
+                       <h2>
+                           Dynamic
+                       </h2>
+                   </div>
+                   <div class="intro__article__slogan--list-item">
+                       <h2>
+                           Unpredictable
+                       </h2>
+                   </div>
+               </div>
+           </div>
+           <div class="intro__article__overlay"></div>
+       </div>
+        <div class="intro__overlay"></div>
+        <div class="intro__desc">
+            <div class="intro__desc--list">
+                <h1 class="intro__desc--list-item">
+                    Team
+                </h1>
+                <h1 class="intro__desc--list-item">
+                    Running
+                </h1>
+                <h1 class="intro__desc--list-item">
+                    Game
+                </h1>
             </div>
         </div>
-
-        <!-- Slider Controls -->
-        <div class="slider__controls">
-            <div class="prev">&lt;</div>
-            <div class="next">&gt;</div>
+    </section>
+    <section class="goals">
+        <h1 class="goals__title">
+            NEW IMMERSIVE SPORT
+        </h1>
+        <div class="goals-wrap">
+            <img src="/img/goals-img.jpg" alt="goals">
+            <dl class="goals-wrap--list">
+                <dt class="goals-wrap--list-term">
+                    COMPETITION
+                </dt>
+                <dd class="goals-wrap--list-desc">
+                    Brings running to the new level of competitiveness with
+                    tactics and real shoulder to shoulder team race.
+                </dd>
+                <dt class="goals-wrap--list-term">
+                    ATTRACTIVE
+                </dt>
+                <dd class="goals-wrap--list-desc">
+                    Exciting event with dynamic development that ... engagement
+                </dd>
+                <dt class="goals-wrap--list-term">
+                    Social
+                </dt>
+                <dd class="goals-wrap--list-desc">
+                    new type of time spending; events and entertainments for all family, colleagues, friends; celebrity guests and participants; fan’s support; modern trend
+                </dd>
+                <dt class="goals-wrap--list-term">
+                    Cultural
+                </dt>
+                <dd class="goals-wrap--list-desc">
+                    share of run philosophy, lifestyle, fashion, principles of joining, team  building, friendship, support, development of the new subculture
+                </dd>
+                <dt class="goals-wrap--list-term">
+                    Sportive
+                </dt>
+                <dd class="goals-wrap--list-desc">
+                    competitive, athletic, hardly predictable
+                </dd>
+                <dt class="goals-wrap--list-term">
+                    Popularizing
+                </dt>
+                <dd class="goals-wrap--list-desc">
+                    the health, the new kind of sport and running, the renaissance of  running sport from the individual activity to the global team game
+                </dd>
+                <dt class="goals-wrap--list-term">
+                    Innovative
+                </dt>
+                <dd class="goals-wrap--list-desc">
+                    using of Blockchain technologies and Artificial Intelligence Software
+                </dd>
+                <dt class="goals-wrap--list-term">
+                    Charitable
+                </dt>
+                <dd class="goals-wrap--list-desc">
+                    Support of Ukrainian Athletes
+                </dd>
+            </dl>
         </div>
-        <!-- Slider Controls End-->
-
-        <!-- Slide info -->
-        <div class="slider__info">
-            <div class="slider__info--meter">
-                <div class="slider__info--meter_inner"></div>
-            </div>
-        </div>
-        <!-- Slide info end-->
-
-        <!-- next slide progress meter -->
-        <div class="slider__progress"></div>
-        <!-- next slide progress meter end -->
-    </div>
-    <div class="goals">
-        <div class="goals__overview">
-            <h2 class="goals__overview--title">New team running sport game</h2>
-            <div class="goals__overview--item first">
-                <h1 class="goals__overview--item_title">modern</h1>
-            </div>
-            <div class="goals__overview--item">
-                <h1>dynamic</h1>
-            </div>
-            <div class="goals__overview--item">
-                <h1>spectacular</h1>
-            </div>
-        </div>
-        <div class="goals__wrapper">
-            <div class="goals__wrapper--image">
-                <h1>Goals</h1>
-                <img src="/img/goals-img.jpg" alt="goals">
-            </div>
-            <ul class="goals__wrapper--list">
-                <li class="goals__wrapper--list--item">Sportive <br><span>(competitive, athletic, hardly predictable)</span></li>
-                <li class="goals__wrapper--list--item">Popularizing <br><span>(the health, the new kind of sport and running, the renaissance of  running sport from the individual activity to the global team game)</span>
-                </li>
-                <li class="goals__wrapper--list--item">Cultural <br><span>(share of run philosophy, lifestyle, fashion, principles of joining, team  building, friendship, support, development of the new subculture)</span>
-                </li>
-                <li class="goals__wrapper--list--item">Social <br><span>(the new type of time spending, events and entertainments for all family,  col eagues, friends, with celebrity guests and show implants, fan’s  power, actual and influential trend)</span>
-                </li>
-                <li class="goals__wrapper--list--item">Commercial <br><span>(merchandise realization, sponsors and partners advertising)</span></li>
-                <li class="goals__wrapper--list--item">Innovative <br><span>(using of Blockchain technologies and Artificial Intelligence Software)</span>
-                </li>
-                <li class="goals__wrapper--list--item">Charitable <br><span>(Support of Ukrainian Athletes)</span></li>
-            </ul>
-        </div>
-    </div>
+    </section>
 
     <!-- Competitions -->
     <div class="competitions">
-        <h1 class="competitions__title">ABM Competitions</h1>
+        <div class="competitions__header">
+            <h1 class="competitions__header-title">Competitions</h1>
+        </div>
         <div class="competitions__items">
+            <div class="competitions__items--left-overlay">
+            </div>
             <div class="competitions__items--item">
                 <a class="competitions__items--item--link" href="/competitions/cup-benelux">
                     <img src="/img/cup-benelux.jpg" alt="cup-benelux"/>

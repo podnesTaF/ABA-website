@@ -8,17 +8,13 @@
 body {
   font-family: "Montserrat", sans-serif;
   font-size: 16px;
-  background: url("/img/cells-bg.jpg") no-repeat center fixed;
-  background-size: cover;
   overflow-x: hidden;
 }
 
 main {
   background-color: #fff;
-  max-width: 1280px;
+  max-width: 1200px;
   margin: 0 auto;
-  /*border-left: 2px solid #ee342c;*/
-  /*border-right: 2px solid #ee342c;*/
 }
 
 .menu {
