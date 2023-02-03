@@ -22,6 +22,15 @@ router.get('/', (req, res) => {
   });
 });
 
+router.get('/aba-structure', (req, res) => {
+  res.render('aba-structure', {
+    pageTitle: 'ABA - structure',
+    path: '/aba-structure',
+    theme: 'dark',
+    introImage: '/img/main-logo.png',
+  });
+})
+
 router.get('/rules', (req, res) => {
   res.render('rules', {
     pageTitle: 'ABM - rules',

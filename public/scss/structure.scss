@@ -1,0 +1,57 @@
+.intro {
+  &__preview {
+    background: url("/img/intro-bg.jpg") no-repeat center center/cover;
+    height: calc(100vh - 83px);
+    width: 100%;
+    position: relative;
+    &--overlay {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        top: 0;
+        background-color: rgba(0, 0, 0, 0.5);
+        z-index: 0;
+    }
+    &--title {
+      position: relative;
+      background-color: rgba(0, 0, 0, 0.5);
+      height: 20vh;
+      padding: 33px 0 63px 63px;
+      z-index: 1;
+      font-size: 32px;
+      line-height: 39px;
+      text-transform: uppercase;
+      color: white;
+    }
+  }
+}
+
+.structure {
+  width: 100%;
+  background-color: #D9D9D9;
+  &__title {
+    background-color: #11111b;
+    height: 60vh;
+    width: 100%;
+    padding: 33px 63px;
+    h1 {
+      color: white;
+      font-size: 96px;
+      line-height: 117px;
+      text-transform: uppercase;
+    }
+  }
+  &__content {
+    width: 100%;
+    padding: 94px 67px;
+    height: 200vh;
+    h3 {
+        font-size: 42px;
+        line-height: 51px;
+        text-transform: uppercase;
+        color: #11111b;
+      margin-bottom: 10px;
+    }
+  }
+}

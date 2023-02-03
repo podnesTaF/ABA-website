@@ -1,6 +1,8 @@
 .competitions {
   background-color: #11111b;
-  padding-bottom: 3rem;
+  padding-bottom: 10px;
+  border-bottom: 2px solid white;
+  transform: scaleX(1.02);
 }
 .competitions.page {
   background-color: #fff;
