@@ -3,14 +3,14 @@
   &__article {
     background: url('/img/intro-bg.jpg') no-repeat center center/cover;
     height: calc(100vh - 83px);
-    width: 100%;;
+    width: 100%;
     position: relative;
 
     &__slogan {
       display: flex;
-      height: 150px;
+      height: 12rem;
       justify-content: center;
-      padding: 24px;
+      padding: 1.5rem;
       background-color: rgba(0, 0, 0, 0.5);
 
       &--list {
@@ -22,8 +22,8 @@
         &-item {
           h2 {
             color: white;
-            font-size: 40px;
-            line-height: 49px;
+            font-size: 3.4rem;
+            line-height: 4rem;
             text-transform: uppercase;
           }
 
@@ -56,12 +56,12 @@
     background-color: #11111b;
     width: 100%;
     position: relative;
-    padding: 75px 90px;
+    padding: 5rem 6rem;
     &--list {
       &-item {
-        font-size: 96px;
+        font-size: 6rem;
         color: white;
-        line-height: 117px;
+        line-height: 7rem;
         text-transform: uppercase;
       }
     }
@@ -74,5 +74,26 @@
     width: 100%;
     height: 80vh;
     background-color: rgba(0, 0, 0, 0.5);
+  }
+}
+
+@media screen and (max-width: 992px){
+
+  .intro__article__slogan {
+    height: 20rem;
+&--list {
+      flex-flow: column;
+      &-item {
+        &:nth-child(2) {
+          align-self: start;
+        }
+        &:nth-child(3) {
+          align-self: start;
+        }
+      }
+    }
+  }
+  .intro__article__overlay {
+    height: 30vh;
   }
 }

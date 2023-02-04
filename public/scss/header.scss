@@ -15,7 +15,7 @@
     &--logo {
       width: 92px;
       height: 38px;
-      margin-left: 25px;
+      margin-left: 1.5rem;
     }
 
     &--list {
@@ -24,7 +24,7 @@
       list-style: none;
       &--item {
         display: flex;
-        margin-left: 20px;
+        margin-left: 1.2rem;
         align-items: center;
         cursor: pointer;
         &:last-child {
@@ -47,7 +47,7 @@
         }
 
         &_link {
-          font-size: 24px;
+          font-size: 1.5rem;
           font-weight: 700;
           text-transform: uppercase;
           text-decoration: none;
@@ -75,12 +75,18 @@
   }
 }
 
-//.full-bg {
-//  background :linear-gradient(90deg, rgba(238, 52, 44, 0.6) 0%, rgba(17, 17, 27, 1) 35%, rgba(17, 17, 27, 1) 65%, rgba(238, 52, 44, 0.6) 100%);
-//  position: fixed;
-//  top: 0;
-//  left: 0;
-//  bottom: 0;
-//  right: 0;
-//  z-index: -1;
-//}
+@media screen and (max-width: 992px) {
+  .header {
+    &__nav {
+      &--list {
+        display: none;
+      }
+    }
+    &__burger {
+      display: block;
+      cursor: pointer;
+      margin-right: 1.5rem;
+    }
+  }
+}
+

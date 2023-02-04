@@ -17,7 +17,7 @@
 .header__nav--logo {
   width: 92px;
   height: 38px;
-  margin-left: 25px;
+  margin-left: 1.5rem;
 }
 .header__nav--list {
   display: flex;
@@ -26,7 +26,7 @@
 }
 .header__nav--list--item {
   display: flex;
-  margin-left: 20px;
+  margin-left: 1.2rem;
   align-items: center;
   cursor: pointer;
 }
@@ -43,7 +43,7 @@
   color: #ee342c;
 }
 .header__nav--list--item_link {
-  font-size: 24px;
+  font-size: 1.5rem;
   font-weight: 700;
   text-transform: uppercase;
   text-decoration: none;
@@ -63,6 +63,17 @@
 }
 .header__burger {
   display: none;
+}
+
+@media screen and (max-width: 992px) {
+  .header__nav--list {
+    display: none;
+  }
+  .header__burger {
+    display: block;
+    cursor: pointer;
+    margin-right: 1.5rem;
+  }
 }
 
 /*# sourceMappingURL=header.css.map */

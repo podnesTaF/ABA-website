@@ -34,7 +34,7 @@
 }
 .competitions__items--item {
   max-width: 38rem;
-  margin: 80px 20px;
+  margin: 5rem 1.2rem;
   background-color: white;
   padding: 0.7rem;
 }
@@ -65,6 +65,15 @@
 }
 .competitions__items--item_content--date p span {
   font-size: 1rem;
+}
+
+@media screen and (max-width: 992px) {
+  .competitions__items {
+    justify-content: center;
+  }
+  .competitions__items--left-overlay {
+    display: none;
+  }
 }
 
 /*# sourceMappingURL=competitions.css.map */
