@@ -19,8 +19,8 @@
       height: 20vh;
       padding: 33px 0 63px 63px;
       z-index: 1;
-      font-size: 32px;
-      line-height: 39px;
+      font-size: 2rem;
+      line-height: 2.5rem;
       text-transform: uppercase;
       color: white;
     }
@@ -34,21 +34,21 @@
     background-color: #11111b;
     height: 60vh;
     width: 100%;
-    padding: 33px 63px;
+    padding: 2rem 4rem;
     h1 {
       color: white;
-      font-size: 96px;
-      line-height: 117px;
+      font-size: 6rem;
+      line-height: 7.2rem;
       text-transform: uppercase;
     }
   }
   &__content {
     width: 100%;
-    padding: 94px 67px;
+    padding: 6rem 4rem;
     height: 200vh;
     h3 {
-        font-size: 42px;
-        line-height: 51px;
+        font-size: 2.5rem;
+        line-height: 3.1rem;
         text-transform: uppercase;
         color: #11111b;
       margin-bottom: 10px;
