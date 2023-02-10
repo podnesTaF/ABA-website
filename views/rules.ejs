@@ -7,103 +7,56 @@
   <body>
   <%- include('includes/header.ejs') %>
     <main>
-      <div class="rules">
-      <div class="rules__intro">
-        <h1 class="rules__intro--title">
-          Sports team running game BATTLE MILE
-        </h1>
-        <div class="rules__intro--content">
-          <p>- this is a new team-running look
-            a one-mile sport whose competitions can be held in a stadium, in an arena or in
-            any other city, according to the goals and objectives of the organizers of the competition.</p>
-          <div class="rules__intro--content_overlay">
-
+      <section class="intro">
+        <div class="intro__text">
+          <p>- this is a new team-running look a one-mile sport whose competitions can be held in a stadium, in an arena or in any other city, according to the goals and objectives of the organizers of the competition.</p>
+        </div>
+        <div class="intro__overlay"></div>
+      </section>
+      <section class='rules'>
+        <h1 class="rules__title">Rules</h1>
+        <div class="wrapper">
+          <div class="content">
+            <h3>Team competitions.</h3>
+            <p>2 teams of five athletes each go to the start of the race.</p>
+            <h3>distance - 1 mile</h3>
+            <p>The distance that has to be reached is a mile, which in numbers equals 1609 meters and 34 centimeters.</p>
+            <h3>According to the approved chip system</h3>
+            <p>
+              the time of each athlete is recorded every 200 meters, and the results in live mode are displayed on the information panels, which show the total time of each team and the difference between them in a specific time period. This allows the team to control their position and quickly start a tactical exit to remoteness.
+            </p>
+            <h3>Win</h3>
+            <p>
+              The team that shows the best combined time of all participants will win! If the teams showed the same finish time to the thousandth, the victory is won by the team whose representative crossed the finish line first.
+            </p>
+          </div>
+          <div class="addition">
+            <div class="addition__content">
+              <h3>The most interesting thing</h3>
+              <p>each team has two spare participants, the so-called <span>"Jokers"</span> (who are in the "corridor"), they have the right to replace any member of their team once at any stage of the distance for any segment, BUT up to the finish line</p>
+            </div>
+            <img src="/img/rules_frame.svg" alt="rules frame" class="add-image"/>
           </div>
         </div>
-      </div>
-        <div class="rules__items">
-          <h1 class="rules__items--title">Ace Battle Mile rules</h1>
-          <div class="rules__items--item">
-            <div class="rules__items--item_content">
-              <h2 class="rules__items--item_content--title">Rules</h2>
-              <article>
-                <p class="rules__items--item_content--paragraph">
-                  Competitions are team competitions. 2 teams of five athletes each
-                  go to the start of the race. The distance that has to be reached
-                  is a mile, which in numbers equals 1609 meters and 34 centimeters.
-                  According to the approved chip system, the time of each athlete is
-                  recorded every 200 meters, and the results in live mode are
-                  displayed on the information panels, which show the total time of
-                  each team and the difference between them in a specific time
-                  period. This allows the team to control their position and quickly
-                  start a tactical exit to remoteness.
-                </p>
-                <p class="rules__items--item_content--paragraph">
-                  The most interesting thing: each team has two spare participants,
-                  the so-called "Jokers" (who are in the "corridor"), they have the
-                  right to replace any member of their team once at any stage of the
-                  distance for any segment, BUT up to the finish line
-                </p>
-                <p class="rules__items--item_content--paragraph">
-                  The team that shows the best combined time of all participants
-                  will win! If the teams showed the same finish time to the
-                  thousandth, the victory is won by the team whose representative
-                  crossed the finish line first.
-                </p>
-              </article>
-            </div>
-            <img class="rules__items--item_image" src="../../img/rules-symbol.jpg" alt="symbol" />
+      </section>
+      <section class="team">
+        <h1>Team</h1>
+        <div class="team_comp">
+          <p>The team should consist of 7 athletes (5 main + 2 jokers).</p>
+          <h4>Professional teams have one representative of different age categories:</h4>
+          <div class="categories">
+            <h4>U18</h4>
+            <p>16-17 years old inclusive on the day of the competition</p>
+            <h4>U20</h4>
+            <p>18-19 years old inclusive on the day of the competition</p>
+            <h4>U23</h4>
+            <p>20-22 years old inclusive on the day of the competition</p>
+            <h4>adult athletes</h4>
+            <p>23-35 years inclusive on the day of the competition), and jokers, who replaces one of the members of his team over the distance, he can belong only to the adult age category.</p>
           </div>
-          <div class="rules__items--item">
-            <img class="rules__items--item_image" src="../../img/rules-teams.jpg" alt="rules-teams" />
-            <div class="rules__items--item_content">
-              <h2 class="rules__items--item_content--title">Team</h2>
-             <article>
-               <p class="rules__items--item_content--paragraph">The team should consist of 7 athletes (5 main + 2 jokers).</p>
-               <p class="rules__items--item_content--paragraph">
-                 At the same time, professional teams have one representative of
-                 different age categories:
-               </p>
-               <ul class="rules__items--item_content--list">
-                 <li class="rules__items--item_content--list-item">
-                   <p>
-                     U18 (16-17 years old inclusive on the day of the competition),
-                   </p>
-                 </li>
-                 <li class="rules__items--item_content--list-item">
-                   <p>
-                     U20 (18-19 years old inclusive on the day of the competition),
-                   </p>
-                 </li>
-                 <li>
-                   <p>
-                     U23 (20-22 years old inclusive on the day of the competition),
-                   </p>
-                 </li>
-                 <li class="rules__items--item_content--list-item">
-                   <p>
-                     adult athletes (23-35 years inclusive on the day of the
-                     competition),
-                   </p>
-                 </li>
-                 <li class="rules__items--item_content--list-item">
-                   <p>
-                     and jokers, who replaces one of the members of his team over
-                     the distance, he can belong only to the adult age category.
-                   </p>
-                 </li>
-               </ul>
-               <p class="rules__items--item_content--paragraph">
-                 Amateur teams are formed without age groups and cannot be equipped
-                 with participants who competed at the official starts of the
-                 Athletics Federation of Ukraine at the level of the Ukrainian
-                 Championships in the last 3 years.
-               </p>
-             </article>
-            </div>
-          </div>
+          <p>Amateur teams are formed without age groups and cannot be equipped with participants who competed at the official starts of the Athletics Federation of Ukraine at the level of the Ukrainian Championships in the last 3 years.</p>
         </div>
-      </div>
+      </section>
     </main>
   <%- include('includes/footer.ejs') %>
   <%- include('includes/menu.ejs') %>

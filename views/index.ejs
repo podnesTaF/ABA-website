@@ -31,19 +31,23 @@
            </div>
            <div class="intro__article__overlay"></div>
        </div>
-        <div class="intro__overlay"></div>
-        <div class="intro__desc">
-            <div class="intro__desc--list">
-                <h1 class="intro__desc--list-item">
-                    Team
-                </h1>
-                <h1 class="intro__desc--list-item">
-                    Running
-                </h1>
-                <h1 class="intro__desc--list-item">
-                    Game
-                </h1>
+        <div class="slogans">
+            <div class="slogan bigger">
+                <img src="/img/running-group.svg" alt="running people" />
+                <div class="titles">
+                    <h2>Team</h2>
+                    <h2>Running</h2>
+                    <h2>Game</h2>
+                </div>
             </div>
+            <div class="slogan">
+                <div>
+                    <h3>New Global</h3>
+                    <h3>Project Proven</h3>
+                    <h3>in Ukraine</h3>
+                </div>
+            </div>
+        </div>
         </div>
     </section>
     <section class="goals">
@@ -105,31 +109,11 @@
             </dl>
         </div>
     </section>
-
-    <!-- Competitions -->
-    <div class="competitions">
-        <div class="competitions__header">
-            <h1 class="competitions__header-title">Competitions</h1>
-        </div>
-        <div class="competitions__items">
-            <div class="competitions__items--left-overlay">
-            </div>
-            <div class="competitions__items--item">
-                <a class="competitions__items--item--link" href="/competitions/cup-benelux">
-                    <img src="/img/cup-benelux.jpg" alt="cup-benelux"/>
-                </a>
-                <div class="competitions__items--item_content">
-                    <a class="competitions__items--item_content--link" href="/competitions/cup-benelux"><h1>Cup Benelux 2023</h1></a>
-                    <p class="competitions__items--item_content--paragraph">
-                        Cup Benelux is a debut of ABM in Europe. Renaissance of running
-                        sport from the individual activity to the global team game.
-                    </p>
-                    <div class="competitions__items--item_content--date">
-                        <p>24 <span>03/2023</span> - 25 <span>03/2023</span></p>
-                    </div>
-                </div>
-            </div>
-        </div>
+    <div class="intro-video">
+        <video width="1115" style="width:100%;max-height:100%" autoplay muted loop controls preload="auto">
+            <source src="/video/intro-battle.mp4" type="video/mp4">
+            Your browser does not support HTML5 video.
+        </video>
     </div>
 </main>
 <%- include('includes/footer.ejs') %>

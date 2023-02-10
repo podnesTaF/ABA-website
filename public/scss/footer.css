@@ -1,16 +1,13 @@
 .footer {
   background-color: #11111b;
-  padding-bottom: 50px;
-  padding-top: 20px;
-  max-width: 1200px;
+  padding: 20px 0;
   margin: auto;
   width: 100%;
 }
 .footer-wrap {
   color: white;
-  padding: 20px 10px;
+  padding: 20px 0 20px 20px;
   background-color: #11111b;
-  transform: scale(1.05);
   max-width: 1200px;
   margin: auto;
   display: flex;
@@ -41,9 +38,11 @@
   bottom: 0;
 }
 .footer-wrap__items--item-list {
+  display: flex;
   list-style: none;
 }
 .footer-wrap__items--item-list_item-link {
+  margin-right: 8px;
   color: white;
   text-decoration: none;
 }
@@ -77,6 +76,9 @@
   .footer-wrap__items {
     display: block;
     width: 100%;
+  }
+  .footer-wrap__items--item-list {
+    justify-content: center;
   }
   .footer-wrap__items--item, .footer-wrap__items--item:not(:last-child), .footer-wrap__items--item:last-child {
     margin-right: 0;

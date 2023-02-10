@@ -35,7 +35,7 @@ router.get('/rules', (req, res) => {
   res.render('rules', {
     pageTitle: 'ABM - rules',
     path: '/rules',
-    theme: 'light',
+    theme: 'dark',
     introImage: '/img/rules-abm-logo.png',
   });
 })

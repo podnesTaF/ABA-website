@@ -1,15 +1,12 @@
 .footer {
   background-color: #11111b;
-  padding-bottom: 50px;
-  padding-top: 20px;
-  max-width: 1200px;
+  padding: 20px 0;
   margin: auto;
   width: 100%;
  &-wrap {
    color: white;
-   padding: 20px 10px;
+   padding: 20px 0 20px 20px;
    background-color: #11111b;
-   transform: scale(1.05);
    max-width: 1200px;
    margin: auto;
    display: flex;
@@ -41,9 +38,11 @@
          }
        }
        &-list {
+         display: flex;
          list-style: none;
          &_item {
            &-link {
+             margin-right: 8px;
              color: white;
              text-decoration: none;
              &:hover {
@@ -86,6 +85,9 @@
       display: block;
       width: 100%;
 
+      &--item-list {
+        justify-content: center;
+      }
       &--item, &--item:not(:last-child), &--item:last-child {
         margin-right: 0;
         margin-bottom: 20px;

@@ -15,9 +15,8 @@
   position: relative;
 }
 .header__nav--logo {
-  width: 92px;
-  height: 38px;
-  margin-left: 1.5rem;
+  height: 35px;
+  margin-left: 0.5rem;
 }
 .header__nav--list {
   display: flex;

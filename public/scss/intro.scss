@@ -52,28 +52,45 @@
       background-color: rgba(0, 0, 0, 0.5);
     }
   }
-  &__desc {
-    background-color: #11111b;
+  .slogans {
+    display: flex;
     width: 100%;
-    position: relative;
-    padding: 5rem 6rem;
-    &--list {
-      &-item {
-        font-size: 6rem;
-        color: white;
-        line-height: 7rem;
-        text-transform: uppercase;
-      }
-    }
   }
-  &__overlay {
-    position: absolute;
-    left: 20px;
-    right: -20px;
-    top: 35%;
-    width: 100%;
-    height: 80vh;
-    background-color: rgba(0, 0, 0, 0.5);
+
+  .slogan {
+    background-color: #ee342c;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .slogan h3 {
+    color: white;
+    text-transform: uppercase;
+    font-size: 24px;
+  }
+
+  .slogan.bigger {
+    width: 60%;
+    background-color: black;
+    display: flex;
+    justify-content: space-around;
+    align-self: center;
+    padding: 60px 30px;
+  }
+
+  .slogan .titles {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .slogan .titles h2 {
+    font-size: 52px;
+    color: white;
+    text-transform: uppercase;
   }
 }
 
@@ -95,5 +112,15 @@
   }
   .intro__article__overlay {
     height: 30vh;
+  }
+}
+
+@media screen and (max-width: 768px){
+  .slogans {
+    flex-direction: column;
+    .slogan, .slogan.bigger {
+      width: 100%;
+      min-height: 250px;
+    }
   }
 }
