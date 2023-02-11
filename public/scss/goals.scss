@@ -68,6 +68,24 @@
   }
 }
 
+@media screen and (max-width: 600px) {
+  .goals {
+    &-wrap {
+      left: 0;
+      margin-left: 20px;
+      max-width: 90%;
+      img {
+        display: none;
+      }
+      &--list {
+        margin-right: 0;
+      }
+    }
+  }
+}
+
+
+
 @media screen and (max-width: 480px) {
   .goals__overview {
     height: 60vh;

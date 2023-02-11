@@ -6,105 +6,105 @@
 <body>
 <%- include('./includes/header.ejs') %>
 <main>
-    <img class="competition__image" src="/img/cup-benelux-main.jpg" alt="cup-benelux-main"/>
-    <div class="competition">
-        <h2 class="competition__title">ACE Battle Mile Cup Benelux 2023</h2>
+    <div class="intro">
+        <img class="intro--image" src="/img/cup-benelux.jpg" alt="cup-benelux-main"/>
+        <div class="intro--title">
+            <img src="/img/cup-benelux-title.svg" alt="Ace Battle Mile Cup Benelux">
+            <h2>2023</h2>
+        </div>
+    </div>
+    <d class="competition">
         <p class="competition__paragraph">
-            ABM debut in the Netherlands this spring! A beautiful and
+            ABM debut in the Belgium this spring!<br>A beautiful and
             unpredictable show awaits you.
         </p>
         <div class="competition__statistic">
             <div class="competition__statistic_item">
-                <h2>300+</h2>
-                <p>Participants</p>
+                <h2>150+</h2>
+                <h4>Participants</h4>
             </div>
             <div class="competition__statistic_item">
                 <h2>17</h2>
-                <p>Countries</p>
+                <h4>Countries</h4>
             </div>
             <div class="competition__statistic_item">
-                <h2>12</h2>
-                <p>Races</p>
+                <h2>12+</h2>
+                <h4>Races</h4>
             </div>
         </div>
-        <div class="participants">
-            <div class="participants__info">
-                <div class="participants__info--item">
-                    <h2 class="participants__info--item--title">Countries-Participants:</h2>
-                    <div class="participants__info--item--lists">
-                        <ul class="participants__info--item--lists_list">
-                            <li>Ukraine</li>
-                            <li>UK</li>
-                            <li>Poland</li>
-                            <li>Denmark</li>
-                        </ul>
-                        <ul class="participants__info--lists_list">
-                            <li>Netherlands</li>
-                            <li>Norway</li>
-                            <li>Sweden</li>
-                            <li>Finland</li>
-                        </ul>
-                        <ul class="participants__info--lists_list">
-                            <li>Belgium</li>
-                            <li>France</li>
-                            <li>Spain</li>
-                            <li>Portugal</li>
-                        </ul>
-                        <ul class="participants__info--lists_list">
-                            <li>Germany</li>
-                            <li>Luxembourg</li>
-                            <li>Swieatzerland</li>
-                            <li>Austria</li>
-                            <li>Italy</li>
-                        </ul>
-                    </div>
-                    <div class="participants__info--overlay"></div>
-                </div>
-                <div class="participants__info--teams">
-                    <h2 class="participants__info--teams--title">Teams</h2>
-                    <div class="participants__info--teams--lists">
-                        <ul class="participants__info--teams--lists_list">
-                            <li>
-                                <h4>4 professional teams (international athletes):</h4>
-                            </li>
-                            <li>Team "Kiev"</li>
-                            <li>Team "Amsterdam"</li>
-                            <li>Team "Brussel"</li>
-                            <li>Team "Luxembourg"</li>
-                        </ul>
-                        <ul class="participants__info--teams--lists_list">
-                            <li><h4>Others:</h4></li>
-                            <li>4 amateur male teams (athletics European clubs)</li>
-                            <li>4 amateur female teams (athletics European clubs)</li>
-                            <li>4 junior mixed teams (Luxembourg Sport School)</li>
-                        </ul>
-                    </div>
+        <div class="competition__info">
+            <div class="competition__info--participants">
+                <h3>Countries-Participants</h3>
+                <div class="competition__info--participants__lists">
+                    <ul>
+                        <li>Ukraine</li>
+                        <li>UK</li>
+                        <li>Poland</li>
+                        <li>Denmark</li>
+                    </ul>
+                    <ul>
+                        <li>Netherlands</li>
+                        <li>Norway</li>
+                        <li>Sweden</li>
+                        <li>Finland</li>
+                    </ul>
+                    <ul>
+                        <li>Belgium</li>
+                        <li>France</li>
+                        <li>Spain</li>
+                        <li>Portugal</li>
+                    </ul>
+                    <ul>
+                        <li>Germany</li>
+                        <li>Luxembourg</li>
+                        <li>Switzerland</li>
+                        <li>Austria</li>
+                        <li>Italy</li>
+                    </ul>
                 </div>
             </div>
-            <div class="participants__preview">
-                <div class="participants__preview--item">
-                    <h2>Where</h2>
-                    <p>Omnisport Apeldoorn, Netherlands</p>
+            <div class="competition__info--place">
+                <div class="competition__info--place-item">
+                    <h4>Where</h4>
+                    <p>King Baudouin stadium, Brussels</p>
                 </div>
-                <div class="participants__preview--item">
-                    <h2>When</h2>
-                    <p>24 <span>03/2023</span> - 25 <span>03/2023</span></p>
+                <div class="competition__info--place-item">
+                    <h4>When</h4>
+                    <p>05 03 2023</p>
                 </div>
-                <div class="participants__preview--item">
-                    <h2>Schedule</h2>
+                <div class="competition__info--place-item">
+                    <h4>Schedule</h4>
                     <a href="/img/schedule.jpg" download
                     >Shedule <span>/ jpg / 123 kb</span></a
                     >
                 </div>
             </div>
+<!--            <img src="" alt="" class="competition__info&#45;&#45;stadium">-->
+        </div>
+        <div class="teams">
+            <h2 class="teams--title">Teams</h2>
+            <div class="teams--lists">
+                <ul class="teams--lists_list">
+                    <li>
+                        <h4>4 professional teams (international athletes):</h4>
+                    </li>
+                    <li>Team "Kiev"</li>
+                    <li>Team "Amsterdam"</li>
+                    <li>Team "Brussel"</li>
+                    <li>Team "Luxembourg"</li>
+                </ul>
+                <ul class="teams--lists_list">
+                    <li><h4>Others:</h4></li>
+                    <li>4 amateur male teams (athletics European clubs)</li>
+                    <li>4 amateur female teams (athletics European clubs)</li>
+                    <li>4 junior mixed teams (Luxembourg Sport School)</li>
+                </ul>
+            </div>
         </div>
         <div class="program">
-            <h3 class="program__title">March 24, Friday, 7 pm - 10 pm</h3>
+            <h2 class="program__title">Program</h2>
             <ul class="program__list">
-                <li class="program__list--item">Sequence Competition Draw with coaches of the team ​</li>
-            </ul>
-            <h3 class="program__title">March 25, Saturday, 10 am - 8 pm</h3>
-            <ul class="program__list">
+                <li><h3 class="program__list__title">May 5, Friday, 10 am - 8 pm</h3></li>
                 <li>Warm-up for the athletes</li>
                 <li>Opening Ceremony</li>
                 <li>Teams' greeting parade</li>
@@ -124,7 +124,6 @@
                 <li>Ace Battle Universe Grand Presentation</li>
                 <li>Sponsor/Partners Announcements</li>
             </ul>
-            <div class="program__overlay"></div>
         </div>
     </div>
 </main>

@@ -1,34 +1,30 @@
 <!-- @format -->
 
 <%- include('includes/head.ejs') %>
-    <link
-      rel="stylesheet"
-      href="css/competitions.css"
-    />
-    <link rel="stylesheet" href="scss/competitions.css" />
+<link rel="stylesheet" href="/scss/competitions-page.css">
     <title>About Page</title>
   </head>
   <body>
   <%- include('includes/header.ejs') %>
     <main>
-      <div class="competitions page">
-        <h1 class="competitions__title">ABM Competitions</h1>
+      <div class="competitions">
         <div class="competitions__items">
-          <div class="competitions__items--item">
-            <a class="competitions__items--item--link" href="/competitions/cup-benelux">
-              <img src="/img/cup-benelux.jpg" alt="cup-benelux"/>
-            </a>
-            <div class="competitions__items--item_content">
-              <a class="competitions__items--item_content--link" href="/competitions/cup-benelux"><h1>Cup Benelux 2023</h1></a>
-              <p class="competitions__items--item_content--paragraph">
-                Cup Benelux is a debut of ABM in Europe. Renaissance of running
-                sport from the individual activity to the global team game.
-              </p>
-              <div class="competitions__items--item_content--date">
-                <p>24 <span>03/2023</span> - 25 <span>03/2023</span></p>
+          <a href="/competitions/cup-benelux">
+            <div class="competitions__item">
+              <div class="competitions__item--content">
+                <div class="competitions__item--content-title">
+                  <h2>Benelux</h2>
+                  <h2>Cup</h2>
+                </div>
+                <div class="competitions__item--content-date">
+                  <h2>5 May 2023</h2>
+                </div>
+                <div class="competitions__item--content-overlay">
+                  <img src="/img/running-group-light.svg" alt="running group">
+                </div>
               </div>
             </div>
-          </div>
+          </a>
         </div>
       </div>
     </main>

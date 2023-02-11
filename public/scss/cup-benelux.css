@@ -1,204 +1,196 @@
-.competition__image {
+.intro {
+  width: 100%;
+}
+.intro--image {
   width: 100%;
   height: auto;
 }
+.intro--title {
+  background-color: #FF0000;
+  width: 100%;
+  padding: 1rem 3rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.intro--title h2 {
+  font-size: 4rem;
+  color: white;
+}
 
-.competition__title {
-  background-color: #ee342c;
-  font-size: 42px;
-  color: gold;
-  padding: 20px;
+.competition {
+  width: 100%;
 }
 .competition__paragraph {
-  font-size: 1.4rem;
-  padding: 20px 0;
   text-align: center;
+  margin: 2.5rem 0;
+  font-size: 1.5rem;
 }
 .competition__statistic {
   display: flex;
   justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
+  width: 100%;
+  margin-bottom: 2.5rem;
 }
 .competition__statistic_item {
-  margin-left: 20px;
-  width: 12.2rem;
+  width: 33%;
+  text-transform: uppercase;
+  text-align: center;
 }
 .competition__statistic_item h2 {
-  font-size: 3rem;
+  font-size: 6rem;
+  margin-bottom: 1rem;
 }
-.competition__statistic_item p {
-  background-color: #ee342c;
-  color: gold;
-  padding: 7px;
+.competition__statistic_item h4 {
+  font-size: 1.5rem;
+}
+.competition__info {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  border-bottom: 4px solid #ff0000;
+  background: url("/img/stadium.png") no-repeat right bottom/contain;
+}
+.competition__info--participants {
+  width: 60%;
+  height: 100%;
+  justify-self: end;
+}
+.competition__info--participants h3 {
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+.competition__info--participants__lists {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  max-width: 80%;
+  margin-left: auto;
+}
+.competition__info--participants__lists ul {
+  width: 33%;
+  margin-bottom: 1rem;
+}
+.competition__info--place {
+  margin-left: auto;
+  width: 40%;
+  height: 59vh;
+  background: url("/img/red-vector-cup.svg") no-repeat center top/contain;
+  padding-top: 1rem;
+  padding-left: 1.5rem;
+}
+.competition__info--place-item {
+  width: 100%;
+}
+.competition__info--place-item h4 {
+  font-size: 20px;
+  text-transform: uppercase;
+  color: #ff0000;
+  margin-bottom: 0.7rem;
+}
+.competition__info--place-item p {
+  margin-bottom: 0.7rem;
+}
+.competition__info--place-item a {
+  color: black;
 }
 
-.participants {
+.teams {
   width: 100%;
-  padding: 20px;
-  position: relative;
-  display: flex;
-  justify-content: space-between;
+  padding: 3rem;
 }
-.participants__info {
-  max-width: 56rem;
+.teams--title {
+  font-size: 4rem;
+  margin-bottom: 2rem;
+  text-transform: uppercase;
 }
-.participants__info--overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  background-color: rgba(0, 0, 0, 0.5);
-  z-index: -1;
+.teams--lists ul {
+  margin-bottom: 1rem;
 }
-.participants__info--item {
-  background: url("/img/counties.jpg") no-repeat top right;
-  margin-bottom: 30px;
-  height: 400px;
-  position: relative;
-  color: white;
-  z-index: 1;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-.participants__info--item--title {
-  font-size: 32px;
-}
-.participants__info--item--lists {
-  display: flex;
-  max-width: 700px;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-.participants__info--item--lists_list {
-  margin-top: 20px;
-  margin-left: 50px;
-}
-.participants__info--teams--lists {
-  margin-top: 20px;
-}
-.participants__info--teams--lists_list {
-  margin-left: 20px;
-}
-.participants__info--teams--lists_list li {
-  font-size: 18px;
-  margin-top: 20px;
-}
-.participants__info--teams--lists_list li:first-child {
-  font-size: 24px;
-  list-style-type: none;
-}
-.participants__info--teams--lists_list li:not(:first-child) {
+.teams--lists ul li {
   margin-left: 40px;
 }
-.participants__preview {
-  position: sticky;
-  top: 30px;
-  right: 50px;
-  width: 400px;
-  height: 100%;
-  background-color: #ee342c;
-  display: flex;
-  padding: 10px;
-  flex-direction: column;
-  border-radius: 10px;
-  color: gold;
-}
-.participants__preview--item {
-  width: 100%;
-  margin: 10px 0;
-}
-.participants__preview--item a {
-  color: #11111b;
-  text-decoration: none;
-}
-.participants__preview--item a:hover {
-  opacity: 0.5;
-}
-.participants__preview--item a span {
-  color: #11111b;
-}
-.participants__preview--item p {
-  color: #11111b;
+.teams--lists ul li:first-child {
+  text-transform: uppercase;
+  margin-bottom: 0.6rem;
+  margin-left: 0;
+  list-style-type: none;
 }
 
 .program {
-  background: url("/img/program.jpg") no-repeat top right;
-  background-size: contain;
-  position: relative;
+  width: 100%;
+  padding-left: 3rem;
+  padding-bottom: 3rem;
 }
 .program__title {
-  font-size: 24px;
-  margin: 20px 10px;
+  font-size: 4rem;
+  margin-bottom: 2rem;
+  text-transform: uppercase;
 }
 .program__list {
-  margin-left: 30px;
-  padding-bottom: 30px;
+  margin-bottom: 1rem;
 }
-.program__list li:not(:last-child) {
-  margin-bottom: 8px;
+.program__list li {
+  margin-left: 40px;
+}
+.program__list li:first-child {
+  text-transform: uppercase;
+  margin-bottom: 0.6rem;
+  margin-left: 0;
+  list-style-type: none;
 }
 
-@media screen and (max-width: 1200px) {
-  .participants {
+@media screen and (max-width: 768px) {
+  .intro--title {
     flex-direction: column;
-    align-items: center;
+    justify-content: start;
+    align-items: start;
   }
-  .participants__preview {
-    position: initial;
-    max-width: 100%;
+  .intro--title h2 {
+    margin-top: 1rem;
+  }
+  .competition__info--participants__lists ul {
     width: auto;
-    flex-direction: row;
-    justify-content: space-between;
-    margin: 20px 0;
   }
-  .participants__preview--item {
-    text-align: center;
+  .competition__info--participants__lists ul:nth-child(odd) {
+    margin-right: 3rem;
   }
-  .participants__preview--item:not(:last-child) {
-    border-right: 1px solid gold;
-  }
-  .participants__preview--item h2 {
-    margin-bottom: 20px;
-  }
-  .program {
-    color: white;
-    padding: 40px;
-  }
-  .program__overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    background-color: rgba(0, 0, 0, 0.6);
-    z-index: 0;
-  }
-  .program__title, .program__list {
-    z-index: 1;
-    position: relative;
+  .competition__info--place {
+    height: 40vh;
   }
 }
-@media screen and (max-width: 720px) {
-  .program {
-    background-size: cover;
+@media screen and (max-width: 678px) {
+  .intro--title img {
+    width: 80%;
   }
-}
-@media screen and (max-width: 550px) {
-  .participants__preview {
-    display: flex;
+  .intro--title h2 {
+    font-size: 3rem;
+  }
+  .competition__statistic_item h2 {
+    font-size: 4rem;
+  }
+  .competition__info {
+    background: none;
     flex-direction: column;
   }
-  .participants__preview--item {
-    text-align: start;
-    padding-bottom: 20px;
+  .competition__info--participants {
+    width: 100%;
+    height: auto;
   }
-  .participants__preview--item:not(:last-child) {
-    border-right: none;
-    border-bottom: 1px solid gold;
+  .competition__info--participants__lists {
+    max-width: 100%;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-right: 2rem;
+  }
+  .competition__info--place {
+    width: 100%;
+    height: 100%;
+    margin-left: 0;
+    margin-top: 2rem;
+    background: url("/img/red-vector-cup.svg") no-repeat center top/cover;
   }
 }
 

@@ -5,7 +5,7 @@ const express = require('express');
 const router = express.Router();
 
 
-router.get('/', (req, res) => {
+router.get('/s', (req, res) => {
     res.render('developing', {
       pageTitle: 'Ace Battle Association',
       path: '/',
@@ -13,7 +13,7 @@ router.get('/', (req, res) => {
       introImage: '/img/main-logo.png',
     });
 })
-router.get('/s', (req, res) => {
+router.get('/', (req, res) => {
   res.render('index', {
     pageTitle: 'ABA - main',
     path: '/',
@@ -53,7 +53,7 @@ router.get('/competitions', (req, res) => {
   res.render('competitions', {
     pageTitle: 'ABM - Competitions',
     path: '/competitions',
-    theme: 'light',
+    theme: 'dark',
     introImage: '/img/about-logo.png',
   });
 })
@@ -62,7 +62,7 @@ router.get('/competitions/cup-benelux', (req, res) => {
   res.render('cup-benelux', {
     pageTitle: 'ABM - Competitions',
     path: '/competitions',
-    theme: 'light',
+    theme: 'dark',
     introImage: '/img/about-logo.png',
   });
 })

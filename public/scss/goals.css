@@ -56,6 +56,19 @@
     height: 80vh;
   }
 }
+@media screen and (max-width: 600px) {
+  .goals-wrap {
+    left: 0;
+    margin-left: 20px;
+    max-width: 90%;
+  }
+  .goals-wrap img {
+    display: none;
+  }
+  .goals-wrap--list {
+    margin-right: 0;
+  }
+}
 @media screen and (max-width: 480px) {
   .goals__overview {
     height: 60vh;
