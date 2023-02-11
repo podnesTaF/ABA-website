@@ -38,8 +38,6 @@
         &:hover {
           &:not(:last-child) {
             .header__nav--list--item_link {
-              border-bottom: 2px solid #ee342c;
-              border-top: 2px solid #ee342c;
               color: #ee342c;
             }
           }
@@ -57,8 +55,6 @@
           align-items: center;
 
           &.active {
-            border-bottom: 2px solid #ee342c;
-            border-top: 2px solid #ee342c;
             color: #ee342c;
           }
           &:active {
