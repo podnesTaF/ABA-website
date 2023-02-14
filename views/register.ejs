@@ -1,0 +1,123 @@
+<%- include('includes/head.ejs') %>
+    <link rel="stylesheet" href="/scss/register.css">
+</head>
+<body>
+    <main>
+        <section class="intro">
+            <img src="/img/Group.svg" alt="running group" class='group_img'/>
+            <img src="/img/logo.svg" class='logo' alt="logo"/>
+            <img src="/img/Group.svg" alt="running group"/>
+            <h3>To participate in the Ace Battle mile contest, <br/> fill out the form</h3>
+        </section>
+        <section class="wrapper">
+            <form class="form" action="/register" method="post">
+                <div class="form-field">
+                    <label for="surname">Surname *</label>
+                    <input type="text" value="<%=oldInput.surname%>" id="surname" class="<%=validationErrors.find(e => e.param === 'surname') ? 'invalid' : ''%>" name="surname" placeholder="Enter your Surname">
+                </div>
+                <div class="form-field">
+                    <label for="name">Name *</label>
+                    <input type="text" id="name" value="<%=oldInput.name%>" name="name" class="<%=validationErrors.find(e => e.param === 'name') ? 'invalid' : ''%>" placeholder="Enter your Name">
+                </div>
+                <div class="radio <%=validationErrors.find(e => e.param === 'gender') ? 'invalid' : ''%>">
+                    <p>Gender *:</p>
+                    <label class="radio__option">Male
+                        <input type="radio" id="male" name="gender" value="male">
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="radio__option">Female
+                        <input type="radio" id="female" name="gender" value="female">
+                        <span class="checkmark"></span>
+                    </label>
+                </div>
+                <div class="form-field">
+                    <label for="dateOfBirth">Date of Birth *</label>
+                    <input type="text" id="dateOfBirth" value="<%=oldInput.dateOfBirth%>" class="<%=validationErrors.find(e => e.param === 'dateOfBirth') ? 'invalid' : ''%>" placeholder="DD/MM/YYYY" name="dateOfBirth">
+                    <%if(validationErrors.find(e => e.param === 'dateOfBirth')) {  %>
+                        <div class="error-message">
+                            <p>
+                                <%= validationErrors.find(e => e.param === 'dateOfBirth').msg %>
+                            </p>
+                        </div>
+                    <%}%>
+                </div>
+                <div class="form-field">
+                    <label for="phone">Phone number *</label>
+                    <input type="text" id="phone" value="<%=oldInput.phone%>" class="<%=validationErrors.find(e => e.param === 'phone') ? 'invalid' : ''%>" placeholder="+xxx xx xx xxxx" name="phone">
+                    <%if(validationErrors.find(e => e.param === 'phone')) {  %>
+                        <div class="error-message">
+                            <p>
+                                <%= validationErrors.find(e => e.param === 'phone').msg %>
+                            </p>
+                        </div>
+                    <%}%>
+                </div>
+                <div class="form-field">
+                    <label for="email">Email address*</label>
+                    <input type="email" id="email" value="<%=oldInput.email%>" class="<%=validationErrors.find(e => e.param === 'email') ? 'invalid' : ''%>" placeholder="Enter your email" name="email">
+                    <%if(validationErrors.find(e => e.param === 'email')) {  %>
+                        <div class="error-message">
+                            <p>
+                                <%= validationErrors.find(e => e.param === 'email').msg %>
+                            </p>
+                        </div>
+                    <%}%>
+                </div>
+                <div class="form-field">
+                    <label for="country">Country *</label>
+                    <select name="country" value="<%=oldInput.country%>" class="<%=validationErrors.find(e => e.param === 'country') ? 'invalid' : ''%>" id="country">
+                        <% for (let i = 0; i < countries.length; i++) { %>
+                            <option value="<%= Object.keys(countries[i])[0] %>"><%= Object.values(countries[i])[0] %></option>
+                        <% } %>
+                    </select>
+                    <%if(validationErrors.find(e => e.param === 'country')) {  %>
+                        <div class="error-message">
+                            <p>
+                                <%= validationErrors.find(e => e.param === 'country').msg %>
+                            </p>
+                        </div>
+                    <%}%>
+                </div>
+                <div class="form-field">
+                    <label for="pb">Personal Best on 1500m or 1 mile</label>
+                    <input type="text" value="<%=oldInput.pb%>" class="<%=validationErrors.find(e => e.param === 'pb') ? 'invalid' : ''%>" name="pb" id="pb" placeholder="mm:ss:ms">
+                    <%if(validationErrors.find(e => e.param === 'pb')) {  %>
+                        <div class="error-message">
+                            <p>
+                                <%= validationErrors.find(e => e.param === 'pb').msg %>
+                            </p>
+                        </div>
+                    <%}%>
+                </div>
+                <div class="form-field">
+                    <label for="sb">best result of the season at 1500 meters or 1 mile</label>
+                    <input type="text" value="<%=oldInput.sb%>" class="<%=validationErrors.find(e => e.param === 'sb') ? 'invalid' : ''%>" name="sb" id="sb" placeholder="mm:ss:ms">
+                    <%if(validationErrors.find(e => e.param === 'sb')) {  %>
+                        <div class="error-message">
+                            <p>
+                                <%= validationErrors.find(e => e.param === 'sb').msg %>
+                            </p>
+                        </div>
+                    <%}%>
+                </div>
+                <div class="agree__checkbox checked="<%=oldInput.agree%>" <%=validationErrors.find(e => e.param === 'agree') ? 'invalid' : ''%>">
+                    <input type="checkbox" id="agree" name="agree">
+                    <label for="agree">I agree to the <a href="#">Terms and Conditions</a></label>
+                <%if(validationErrors.find(e => e.param === 'agree')) {  %>
+                    <div class="error-message">
+                        <p>
+                            <%= validationErrors.find(e => e.param === 'agree').msg %>
+                        </p>
+                    </div>
+                <%}%>
+                </div>
+                <button class="btn__submit" type="submit">Sign up</button>
+            </form>
+        </section>
+    </main>
+    <%- include('includes/footer.ejs') %>
+<script src="/js/mask.js"></script>
+    <script src="/js/mask-list.js"></script>
+</body>
+</html>
+

@@ -32,9 +32,13 @@
 .header__nav--list--item:last-child .header__nav--list--item_link {
   height: fit-content;
   align-self: center;
-  background-color: gray;
-  border-radius: 5px;
+  background-color: #3D3D3F;
+  padding: 5px 20px;
+  border-radius: 2px;
   border: none;
+}
+.header__nav--list--item:last-child .header__nav--list--item_link:hover {
+  opacity: 0.9;
 }
 .header__nav--list--item:hover:not(:last-child) .header__nav--list--item_link {
   color: #ee342c;

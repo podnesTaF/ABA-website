@@ -1,0 +1,240 @@
+main {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.intro {
+  margin: 120px 20px 20px 20px;
+  height: 50vh;
+  max-width: 1300px;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  position: relative;
+  img {
+    height: 100%;
+  }
+  .logo {
+    height: 70%;
+  }
+  h3 {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    text-transform: uppercase;
+  }
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 660px;
+  border: 1px solid #ff0000;
+  padding: 4rem 5rem 2.6rem;
+  margin-bottom: 2.4rem;
+}
+
+.form-field {
+  width: 100%;
+  margin-top: 1.2rem;
+  display: flex;
+  flex-direction: column;
+  label {
+    text-transform: uppercase;
+    margin-bottom: 0.8rem;
+  }
+  input {
+    outline: none;
+    border: 1px solid #D9DADB;
+    background-color: rgba(217, 218, 219, 0.32);
+    padding: 0.7rem 1.5rem;
+    &.invalid {
+      border: 1px solid #ff0000;
+    }
+    &::placeholder {
+      font-size: 14px;
+      margin-bottom: 0;
+      transform: translateY(2px);
+      text-transform: uppercase;
+      color: rgba(0, 0, 0, 0.33);
+    }
+  }
+  select {
+    outline: none;
+    border: 1px solid #D9DADB;
+    background-color: rgba(217, 218, 219, 0.32);
+    padding: 0.7rem 1.5rem;
+    max-height: 200px;
+  }
+}
+
+.radio {
+  width: 100%;
+  margin-top: 1.2rem;
+  p {
+    text-transform: uppercase;
+    margin-bottom: 0.8rem;
+  }
+  .options {
+    display: flex;
+    max-width: 60%;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  .radio__option {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 22px;
+    user-select: none;
+    input {
+      position: absolute;
+      opacity: 0;
+      cursor: pointer;
+      &:checked ~ .checkmark {
+        background-color: #ff0000;
+        &:after {
+          display: block;
+        }
+      }
+    }
+    &:hover input ~ .checkmark {
+      background-color: #ccc;
+    }
+    .checkmark {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 25px;
+      width: 25px;
+      background-color: #eee;
+      border-radius: 50%;
+    }
+    .checkmark:after {
+      top: 9px;
+      left: 9px;
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: white;
+    }
+  }
+}
+
+.agree__checkbox {
+  width: 100%;
+  position: relative;
+  display: block;
+  margin: 1.2rem 0;
+  min-height: 1.26rem;
+  padding-left: 1.5rem;
+  input {
+    position: absolute;
+    left: 0;
+    z-index: -1;
+    width: 1rem;
+    height: 1.13rem;
+    opacity: 0;
+    &:checked ~ label {
+      &:before {
+        color: #fff;
+        border-color: #ff1111;
+        background-color: #ff0000;
+      }
+      &:after {
+        background-image: url("/img/tick.svg");
+      }
+    }
+  }
+  label {
+    position: relative;
+    margin-bottom: 0;
+    vertical-align: top;
+    &:before, &:after {
+      position: absolute;
+      top: 0.13rem;
+      left: -1.5rem;
+      display: block;
+      width: 1rem;
+      height: 1rem;
+      content: "";
+    }
+    &:before {
+      pointer-events: none;
+      background-color: #fff;
+      border: 1px solid #adb5bd;
+      border-radius: 0.25rem;
+      transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+    }
+    &:after {
+      background: no-repeat 60%/50% 50%;
+    }
+  }
+}
+
+.btn__submit {
+  margin-top: 20px;
+  padding: 16px 59px;
+  background-color: #ff0000;
+  color: white;
+  border: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  cursor: pointer;
+  &:hover {
+    opacity: 0.9;
+  }
+  &:active {
+    transform: scale(0.98);
+  }
+}
+
+.error-message {
+    margin: 10px 0;
+    p {
+      color: #ff0000;
+      font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+  .intro {
+    img {
+      display: none;
+    }
+    .logo {
+      display: block;
+      height: 60%;
+    }
+    h3 {
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      width: 100%;
+      transform: translateX(-50%);
+      text-align: center;
+      text-transform: uppercase;
+    }
+  }
+  .form {
+    padding: 4rem 2rem 2.6rem;
+  }
+}
+
+
+
