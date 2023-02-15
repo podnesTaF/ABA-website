@@ -1,6 +1,9 @@
 const countries = require('../utils/countries.js')
 const {validationResult} = require("express-validator");
 
+const db = require("../models");
+const Athlete = db.athletes;
+
 const getRegister = (req, res, next) => {
     let errors = validationResult(req);
 
@@ -51,12 +54,29 @@ const postRegister = (req, res, next) => {
     }
 
     try {
+        const athlete = {
+            surname,
+            name,
+            gender,
+            dateOfBirth,
+            phone,
+            email,
+            country,
+            pb,
+            sb,
+            agree
+        }
 
+        Athlete.create(athlete)
+            .then(data => {
+                res.redirect('/')
+            }).catch(e => {
+                console.log(e)
+            })
     } catch (e) {
         console.log(e)
     }
     console.log(surname, name, gender, dateOfBirth, phone, email, country, pb, sb, agree)
-    res.redirect('/')
 }
 
 module.exports = {

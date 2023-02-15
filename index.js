@@ -24,24 +24,14 @@ app.use(flash());
 app.use(mainRouter);
 app.use(authRouter)
 
-const connectDb = async () => {
-    try {
-        const client = new Client({
-            user: process.env.PGUSER,
-            host: process.env.PGHOST,
-            database: process.env.PGDATABASE,
-            password: process.env.PGPASSWORD,
-            port: process.env.PGPORT
-        })
-
-        await client.connect()
-        await client.end()
-    } catch (error) {
-        console.log(error)
-    }
-}
-
-connectDb()
+const db = require("./models");
+db.sequelize.sync()
+    .then(() => {
+        console.log("Synced db.");
+    })
+    .catch((err) => {
+        console.log("Failed to sync db: " + err.message);
+    });
 
 const PORT = process.env.PORT;
 app.listen(3001, () => {

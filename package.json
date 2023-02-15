@@ -14,12 +14,15 @@
   },
   "dependencies": {
     "connect-flash": "^0.1.1",
+    "cors": "^2.8.5",
     "dotenv": "^16.0.3",
     "ejs": "^3.1.8",
     "express": "^4.18.2",
     "express-validator": "^6.14.3",
     "imask": "^6.4.3",
     "pg": "^8.9.0",
+    "pg-hstore": "^2.3.4",
+    "sequelize": "^6.28.0",
     "serverless-http": "^3.1.1",
     "typeorm": "^0.3.12"
   }
