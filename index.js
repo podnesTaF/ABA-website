@@ -33,6 +33,6 @@ app.use(mainRouter);
 //   });
 
 const PORT = process.env.PORT;
-app.listen(3001, () => {
+app.listen(PORT, () => {
   console.log('server is running on port ' + PORT);
 });
