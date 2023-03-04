@@ -1,113 +1,105 @@
 .intro {
   position: relative;
+  width: 100%;
+  height: 100%;
 }
 .intro__article {
-  background: url("/img/intro-bg.jpg") no-repeat center center/cover;
-  height: calc(100vh - 83px);
-  width: 100%;
   position: relative;
 }
-.intro__article__slogan {
-  display: flex;
-  height: 12rem;
-  justify-content: center;
-  padding: 1.5rem;
-  background-color: rgba(0, 0, 0, 0.5);
-}
-.intro__article__slogan--list {
-  width: 100%;
-  max-width: 1000px;
-  display: flex;
-  justify-content: space-between;
-}
-.intro__article__slogan--list-item h2 {
-  color: white;
-  font-size: 3.4rem;
-  line-height: 4rem;
-  text-transform: uppercase;
-}
-.intro__article__slogan--list-item:nth-child(2) {
-  align-self: center;
-}
-.intro__article__slogan--list-item:nth-child(2) h2 {
-  color: #ee342c;
-}
-.intro__article__slogan--list-item:nth-child(3) {
-  align-self: end;
-}
-.intro__article__overlay {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  width: 100%;
-  height: 50vh;
-  background-color: rgba(0, 0, 0, 0.5);
-}
-.intro .slogans {
-  display: flex;
-  width: 100%;
-}
-.intro .slogan {
-  background-color: #ee342c;
-  width: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.intro .slogan h3 {
-  color: white;
-  text-transform: uppercase;
-  font-size: 24px;
-}
-.intro .slogan.bigger {
-  width: 60%;
-  background-color: black;
-  display: flex;
-  justify-content: space-around;
-  align-self: center;
-  padding: 60px 30px;
-}
-.intro .slogan .titles {
+.intro__article img {
   height: 100%;
+  width: 100%;
+}
+.intro__article__content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  background-color: #FF0000;
+  height: 100%;
+  width: 35%;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: end;
+  align-items: center;
+  clip-path: polygon(100% 0, 100% 89%, 87% 100%, 0 100%, 0 0);
 }
-.intro .slogan img {
-  width: 100%;
-  height: 11rem;
+.intro__article__titles {
+  margin-bottom: 4rem;
 }
-.intro .slogan .titles h2 {
-  font-size: 3.2rem;
+.intro__article__titles h1 {
+  font-size: 3rem;
   color: white;
   text-transform: uppercase;
+}
+.intro__slogan {
+  margin: 1.5rem 0;
+}
+.intro__slogan--item {
+  background-color: #ff0000;
+  clip-path: polygon(0 0, 100% 0%, calc(100% - 30px) 100%, 0% 100%);
+  margin-bottom: 1.2rem;
+  width: 100%;
+  padding-left: 25vw;
+}
+.intro__slogan--item:first-child {
+  padding-left: 7vw;
+}
+.intro__slogan--item:last-child {
+  padding-left: 45vw;
+}
+.intro__slogan--item h2 {
+  background-color: white;
+  clip-path: polygon(30px 0, 100% 0%, calc(100% - 30px) 100%, 0% 100%);
+  padding: 0 35px;
+  text-transform: uppercase;
+  font-size: 2.5rem;
+  display: initial;
+  line-height: 2.5rem;
 }
 
 @media screen and (max-width: 992px) {
-  .intro__article__slogan {
-    height: 20rem;
+  .intro__slogan--item {
+    padding-left: 20vw;
   }
-  .intro__article__slogan--list {
-    flex-flow: column;
+  .intro__slogan--item:first-child {
+    padding-left: 5vw;
   }
-  .intro__article__slogan--list-item:nth-child(2) {
-    align-self: start;
-  }
-  .intro__article__slogan--list-item:nth-child(3) {
-    align-self: start;
-  }
-  .intro__article__overlay {
-    height: 30vh;
+  .intro__slogan--item:last-child {
+    padding-left: 30vw;
   }
 }
-@media screen and (max-width: 768px) {
-  .slogans {
-    flex-direction: column;
+@media screen and (max-width: 621px) {
+  .intro__article__content {
+    width: 50%;
   }
-  .slogans .slogan, .slogans .slogan.bigger {
-    width: 100%;
-    min-height: 250px;
+  .intro__article__titles {
+    margin-bottom: 2rem;
+  }
+  .intro__article__titles h1 {
+    font-size: 3rem;
+    color: white;
+    text-transform: uppercase;
+  }
+  .intro__slogan--item {
+    padding-left: 12vw;
+  }
+  .intro__slogan--item:first-child {
+    padding-left: 2vw;
+  }
+  .intro__slogan--item:last-child {
+    padding-left: 15vw;
+  }
+}
+@media screen and (max-width: 400px) {
+  .intro__slogan--item {
+    padding-left: 3vw;
+  }
+  .intro__slogan--item:first-child {
+    padding-left: 2vw;
+  }
+  .intro__slogan--item:last-child {
+    padding-left: 5vw;
   }
 }
 

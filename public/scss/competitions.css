@@ -6,35 +6,34 @@
   text-decoration: none;
 }
 .competitions__title {
-  background-color: #11111b;
+  background-color: #ff0000;
   color: white;
   display: flex;
-  justify-content: center;
   align-items: center;
-  padding: 30px 0;
+  padding: 1.5rem 0 1rem;
 }
 .competitions__title h1 {
-  font-size: 4rem;
+  margin-left: 3rem;
+  font-size: 2.5rem;
   text-transform: uppercase;
 }
 .competitions__item {
   display: flex;
   width: 100%;
-  height: 40rem;
-  background-color: #D9D9D9;
+  height: 30rem;
 }
 .competitions__item-title {
   margin-top: 2rem;
-  margin-left: 2.5rem;
-  width: 55%;
+  margin-left: 3rem;
+  width: 60%;
 }
 .competitions__item-title h1 {
-  font-size: 6rem;
+  font-size: 4rem;
   text-transform: uppercase;
-  color: #1E1C1F;
+  color: #ff0000;
 }
 .competitions__item--desc {
-  width: 45%;
+  width: 40%;
   background: url("/img/red_vector.svg") no-repeat;
   background-size: 100%;
   display: flex;
@@ -50,22 +49,22 @@
 }
 .competitions__item--overlay {
   position: absolute;
-  width: 100%;
+  width: 80%;
   height: 80%;
-  background: url("/img/stadium.png") no-repeat center center/cover;
+  background: url("/img/stadium.png") no-repeat bottom center/contain;
   bottom: 0;
-  right: -20%;
+  left: 0;
 }
 .competitions__item--overlay img {
   position: absolute;
   bottom: 20px;
-  left: 10%;
-  height: 30rem;
+  left: 30%;
+  height: 25rem;
 }
 
 @media screen and (max-width: 1100px) {
   .competitions__item {
-    height: 30rem;
+    height: 25rem;
   }
   .competitions__item-title {
     margin-top: 1rem;
@@ -98,7 +97,7 @@
 }
 @media screen and (max-width: 768px) {
   .competitions__item {
-    height: 35rem;
+    height: 25rem;
   }
   .competitions__item-title {
     width: 45%;
@@ -112,8 +111,8 @@
     right: 0;
   }
   .competitions__item--overlay img {
-    left: 20%;
-    height: 20rem;
+    left: 30%;
+    height: 15rem;
   }
 }
 @media screen and (max-width: 530px) {
@@ -135,8 +134,10 @@
     justify-content: start;
     padding-top: 5rem;
     padding-right: 1rem;
+    padding-left: 1rem;
   }
   .competitions__item--overlay {
+    width: 100%;
     right: 0;
   }
   .competitions__item--overlay img {

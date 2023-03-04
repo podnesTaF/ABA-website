@@ -1,10 +1,10 @@
 <!-- @format -->
 
 <header class="header">
+  <div class="header__logo">
+    <img class="header__logo-img" src="/img/header_logo.svg" alt="logo">
+  </div>
   <nav class="header__nav">
-    <a href="/"
-      ><img class="header__nav--logo" src="/img/main-logo.svg" alt="logo"
-    /></a>
     <ul class="header__nav--list">
       <li class="header__nav--list--item">
         <a
@@ -28,9 +28,16 @@
         >
       </li>
       <li class="header__nav--list--item">
+        <a
+                class="header__nav--list--item_link <%= path === '/results' ? 'active' : '' %>"
+                href="/results"
+        >Results</a
+        >
+      </li>
+      <li class="header__nav--list--item"><a class="header__nav--list--item_link" href="/register">Registration</a></li>
+      <li class="header__nav--list--item">
         <a class="header__nav--list--item_link" href="# ">EN</a>
       </li>
-      <!-- <li class="header__nav--list--item"><a class="header__nav--list--item_link" href="/register">Join</a></li> -->
     </ul>
     <div class="header__burger">
       <svg viewBox="0 0 384 384">
