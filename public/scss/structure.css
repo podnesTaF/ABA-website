@@ -11,6 +11,7 @@
 }
 
 .structure__content h1 {
+  transform: translateY(-4px);
   text-align: center;
   color: white;
   background-color: #FF0000;
@@ -47,12 +48,10 @@
   font-size: 1rem;
 }
 
-@media screen and (max-width: 721px) {
+@media screen and (max-width: 480px) {
   .people {
     flex-direction: column;
   }
-}
-@media screen and (max-width: 480px) {
   .person {
     width: 100%;
   }

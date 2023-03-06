@@ -86,14 +86,14 @@
 }
 
 .team {
-  max-width: 85%;
-  margin: 20px 0px 100px 30px;
+  max-width: 100%;
+  margin-top: 1rem;
+  margin-bottom: 4rem;
+  background-color: #f3f3f3;
 }
 
-.team h1 {
-  font-size: 64px;
-  text-transform: uppercase;
-  margin-bottom: 50px;
+.team_comp {
+  padding: 5rem 4rem;
 }
 
 .team_comp h4 {
@@ -139,8 +139,20 @@
   .rules .wrapper {
     flex-direction: column;
   }
+  .addition {
+    align-items: center;
+  }
+  .addition__content {
+    margin-right: 10px;
+    border: 3px solid #ff0000;
+    padding: 20px;
+  }
   .add-image {
-    left: 25%
+    display: none;
+    left: 25%;
+    object-fit: cover;
+    object-position: top;
+    width: 50%;
   }
 }
 
@@ -150,9 +162,6 @@
       padding: 20px;
       max-width: 100%;
     }
-  }
-  .add-image {
-    left: 15%
   }
 }
 
@@ -183,8 +192,12 @@
   }
 
   .add-image {
-    left: 0;
-    height: 80%;
+    left: 20%;
+    height: 100%;
+    width: 50%;
   }
 
+  .team_comp {
+    padding: 2rem 2rem;
+  }
 }

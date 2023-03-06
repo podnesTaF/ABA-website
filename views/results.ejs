@@ -1,0 +1,310 @@
+<%- include('includes/head.ejs') %>
+<link rel="stylesheet" href="/scss/results.css"/>
+</head>
+<body>
+<%- include('./includes/header.ejs') %>
+<main>
+    <div class="intro">
+        <img class="intro__image" src="/img/cup-benelux.jpg" alt="cup-benelux-main"/>
+        <div class="intro__title">
+            <h2>Results and Statistic</h2>
+        </div>
+    </div>
+    <section class="results">
+        <h3>Results</h3>
+        <div class="results-table">
+            <table>
+                <thead>
+                <tr>
+                    <th>Tour</th>
+                    <th>Competition date</th>
+                    <th>Place</th>
+                    <th>Battle result times</th>
+                    <th></th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>
+                        Battle Mile Indoor League 20/21 Day 5
+                    </td>
+                    <td>2021-03-14</td>
+                    <td>Indoor</td>
+                    <td>KMRC Адреналін / 25:45.90
+                        KMRC Гончі / 28:58.74
+                    </td>
+                    <td>details</td>
+                </tr>
+                <tr>
+                    <td>
+                        Battle Mile Indoor League 20/21 Day 5
+                    </td>
+                    <td>2021-03-14</td>
+                    <td>Indoor</td>
+                    <td>KMRC Адреналін / 25:45.90
+                        KMRC Гончі / 28:58.74
+                    </td>
+                    <td>details</td>
+                </tr>
+                <tr>
+                    <td>
+                        Battle Mile Indoor League 20/21 Day 5
+                    </td>
+                    <td>2021-03-14</td>
+                    <td>Indoor</td>
+                    <td>KMRC Адреналін / 25:45.90
+                        KMRC Гончі / 28:58.74
+                    </td>
+                    <td>details</td>
+                </tr>
+                <tr>
+                    <td>
+                        Battle Mile Indoor League 20/21 Day 5
+                    </td>
+                    <td>2021-03-14</td>
+                    <td>Indoor</td>
+                    <td>KMRC Адреналін / 25:45.90
+                        KMRC Гончі / 28:58.74
+                    </td>
+                    <td>details</td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="page_btns">
+            <button class="page_btns__btn active">1</button>
+            <button class="page_btns__btn">2</button>
+            <p>...</p>
+            <button class="page_btns__btn">11</button>
+        </div>
+    </section>
+    <section class="statistic">
+        <h3>Statistics</h3>
+        <div class="statistic-filter">
+            <form action="#" class="search" autocomplete="off">
+                <ul>
+                    <li>
+                        <h4>Gender</h4>
+                        <label>
+                            <select name="genderId" class="sf-input-select" id="gender-select">
+                                <option selected="selected" data-sf-depth="0" value>All Items</option>
+                                <option value="1">Male</option>
+                                <option value="2">Female</option>
+                            </select>
+                        </label>
+                    </li>
+                    <li>
+                        <h4>Place</h4>
+                        <label>
+                            <select name="place" class="sf-input-select" id="place-select">
+                                <option selected="selected" data-sf-depth="0" value>All Items</option>
+                                <option value="Indoor">Indoor</option>
+                                <option value="Outdoor">Outdoor</option>
+                            </select>
+                        </label>
+                    </li>
+                    <li>
+                        <h4>Age Group</h4>
+                        <label>
+                            <select id="age-group-select" class="sf-input-select" name="ageGroup" title>
+                                <option class="sf-level-0 sf-item-0 sf-option-active" selected="selected"
+                                        data-sf-depth="0" value="">All Items
+                                </option>
+                                <option class="sf-level-0" value="U16">U16</option>
+                                <option class="sf-level-0" value="U18">U18</option>
+                                <option class="sf-level-0" value="U20">U20</option>
+                                <option class="sf-level-0" value="U23">U23</option>
+                                <option class="sf-level-0" value="Senior">Senior</option>
+                            </select>
+                        </label>
+                    </li>
+                    <li>
+                        <h4>Nationality</h4>
+                        <label>
+                            <select id="nationality-select" class="sf-input-select" name="athleteCountry" title="">
+                                <option class="sf-level-0 sf-item-0 sf-option-active" selected="selected"
+                                        data-sf-depth="0" value="">All Items
+                                </option>
+                                <option class="sf-level-0" value="Ukraine">Ukraine</option>
+                                <option class="sf-level-0" value="Morocco">Morocco</option>
+                                <option class="sf-level-0" value="Europe">Europe</option>
+                                <option class="sf-level-0" value="Serbia and Montenegro">Serbia and Montenegro</option>
+                            </select>
+                        </label>
+                    </li>
+                    <li>
+                        <h4>Season</h4>
+                        <label>
+                            <select id="season-select" class="sf-input-select" name="season" title="">
+                                <option class="sf-level-0 sf-item-0 sf-option-active" selected="selected"
+                                        data-sf-depth="0" value="">All Items
+                                </option>
+                                <option class="sf-level-0" value="2020">2020</option>
+                                <option class="sf-level-0" value="2021">2021</option>
+                                <option class="sf-level-0" value="2022">2022</option>
+                                <option class="sf-level-0" value="2023">2023</option>
+                            </select>
+                        </label>
+                    </li>
+                    <li>
+                        <h4>Event</h4>
+                        <label>
+                            <select id="event-select" class="sf-input-select" name="eventName" title>
+                                <option class="sf-level-0 sf-item-0 sf-option-active" selected="selected"
+                                        data-sf-depth="0" value="">All Items
+                                </option>
+                                <option class="sf-level-0" value="Battle Mile Indoor League 20/21 Day 1">Battle Mile
+                                    Indoor League 20/21 Day 1
+                                </option>
+                                <option class="sf-level-0" value="Battle Mile Indoor League 20/21 Day 2">Battle Mile
+                                    Indoor League 20/21 Day 2
+                                </option>
+                                <option class="sf-level-0" value="Battle Mile Indoor League 20/21 Day 3">Battle Mile
+                                    Indoor League 20/21 Day 3
+                                </option>
+                                <option class="sf-level-0" value="Battle Mile Indoor League 20/21 Day 4">Battle Mile
+                                    Indoor League 20/21 Day 4
+                                </option>
+                                <option class="sf-level-0" value="Battle Mile Indoor League 20/21 Day 5">Battle Mile
+                                    Indoor League 20/21 Day 5
+                                </option>
+                            </select>
+                        </label>
+                    </li>
+                    <li>
+                        <h4>Skill level</h4>
+                        <label>
+                            <select id="skill-level-select" class="sf-input-select" name="skillLevel" title="">
+                                <option class="sf-level-0 sf-item-0 sf-option-active" selected="selected"
+                                        data-sf-depth="0" value="">All Items
+                                </option>
+                                <option class="sf-level-0" value="1">Amateur</option>
+                                <option class="sf-level-0" value="2">Professional</option>
+                            </select>
+                        </label>
+                    </li>
+                    <li>
+                        <h4>Club</h4>
+                        <label>
+                            <select name="clubName" id="club-name-select">
+                                <option class="sf-level-0 sf-item-0 sf-option-active" selected="selected"
+                                        data-sf-depth="0" value>All Items
+                                </option>
+                                <option value="noClub">No club</option>
+                                <option value="Kyiv">Kyiv</option>
+                                <option value="Brussels">Brussels</option>
+                                <option value="Luxembourg">Luxembourg</option>
+                            </select>
+                        </label>
+                    </li>
+                    <li>
+                        <button class="btn__submit" type="submit">
+                            Sort
+                        </button>
+                    </li>
+                    <li>
+                        <button class="btn__submit" type="submit">
+                            Reset Filters
+                        </button>
+                    </li>
+                </ul>
+            </form>
+        </div>
+        <div class="statistic__table">
+            <table>
+                <thead>
+                <tr>
+                    <th>Rank</th>
+                    <th>Competitor</th>
+                    <th>Competitor skill level</th>
+                    <th>Club</th>
+                    <th>DOB</th>
+                    <th>Age Group</th>
+                    <th>Date of Competition</th>
+                    <th>Nat</th>
+                    <th>Events</th>
+                    <th>Competition</th>
+                    <th>Host city/country</th>
+                    <th>Result</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Vasul&apos; Koval&apos;</td>
+                    <td>Prof</td>
+                    <td>Kherson</td>
+                    <td>11/11/1989</td>
+                    <td>Senior</td>
+                    <td>2021-02-20</td>
+                    <td>
+                        UKR
+                    </td>
+                    <td>Battle Mile Indoor League 20/21 Day 2</td>
+                    <td>Tour 3 M Prof (Kharkiv-Kherson)</td>
+                    <td>Kyiv/Ukraine</td>
+                    <td>04:08.37</td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>Vasul&apos; Koval&apos;</td>
+                    <td>Prof</td>
+                    <td>Kherson</td>
+                    <td>11/11/1989</td>
+                    <td>Senior</td>
+                    <td>2021-02-20</td>
+                    <td>
+                        UKR
+                    </td>
+                    <td>Battle Mile Indoor League 20/21 Day 2</td>
+                    <td>Tour 3 M Prof (Kharkiv-Kherson)</td>
+                    <td>Kyiv/Ukraine</td>
+                    <td>04:08.37</td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>Vasul&apos; Koval</td>
+                    <td>Prof</td>
+                    <td>Kherson</td>
+                    <td>11/11/1989</td>
+                    <td>Senior</td>
+                    <td>2021-02-20</td>
+                    <td>
+                        UKR
+                    </td>
+                    <td>Battle Mile Indoor League 20/21 Day 2</td>
+                    <td>Tour 3 M Prof (Kharkiv-Kherson)</td>
+                    <td>Kyiv/Ukraine</td>
+                    <td>04:08.37</td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>Vasul&apos; Koval&apos;</td>
+                    <td>Prof</td>
+                    <td>Kherson</td>
+                    <td>11/11/1989</td>
+                    <td>Senior</td>
+                    <td>2021-02-20</td>
+                    <td>
+                        UKR
+                    </td>
+                    <td>Battle Mile Indoor League 20/21 Day 2</td>
+                    <td>Tour 3 M Prof (Kharkiv-Kherson)</td>
+                    <td>Kyiv/Ukraine</td>
+                    <td>04:08.37</td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="page_btns">
+            <button class="page_btns__btn active">1</button>
+            <button class="page_btns__btn">2</button>
+            <p>...</p>
+            <button class="page_btns__btn">11</button>
+        </div>
+    </section>
+</main>
+<%- include('includes/footer.ejs') %>
+<%- include('includes/menu.ejs') %>
+<script src="/js/menu.js"></script>
+<%- include('includes/end.ejs') %>

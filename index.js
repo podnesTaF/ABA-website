@@ -22,15 +22,15 @@ app.use(flash());
 app.use(mainRouter);
 app.use(authRouter)
 
-const db = require('./models');
-db.sequelize
-  .sync()
-  .then(() => {
-    console.log('Synced db.');
-  })
-  .catch((err) => {
-    console.log('Failed to sync db: ' + err.message);
-  });
+// const db = require('./models');
+// db.sequelize
+//   .sync()
+//   .then(() => {
+//     console.log('Synced db.');
+//   })
+//   .catch((err) => {
+//     console.log('Failed to sync db: ' + err.message);
+//   });
 
 const PORT = process.env.PORT;
 app.listen(PORT, () => {

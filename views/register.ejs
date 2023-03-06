@@ -10,7 +10,7 @@
             <h3>To participate in the Ace Battle mile contest, <br/> fill out the form</h3>
         </section>
         <section class="wrapper">
-            <form class="form" action="/register" method="post">
+            <form class="form" action="/" method="get">
                 <div class="form-field">
                     <label for="surname">Surname *</label>
                     <input type="text" value="<%=oldInput.surname%>" id="surname" class="<%=validationErrors.find(e => e.param === 'surname') ? 'invalid' : ''%>" name="surname" placeholder="Enter your Surname">

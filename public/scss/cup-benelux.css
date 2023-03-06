@@ -1,3 +1,8 @@
+main {
+  border-right: 1px solid #D9DADB;
+  border-left: 1px solid #D9DADB;
+}
+
 .intro {
   width: 100%;
 }
@@ -123,17 +128,19 @@
   width: 100%;
   padding-left: 3rem;
   padding-bottom: 3rem;
+  display: flex;
+  justify-content: space-around;
 }
-.program__title {
-  font-size: 4rem;
-  margin-bottom: 2rem;
-  text-transform: uppercase;
+.program--title {
+  display: none;
 }
 .program__list {
   margin-bottom: 1rem;
+  list-style-type: none;
 }
-.program__list li {
-  margin-left: 40px;
+.program__list li:not(:first-child) {
+  border-bottom: 1px solid #D9DADB;
+  padding-bottom: 0.5rem;
 }
 .program__list li:first-child {
   text-transform: uppercase;
@@ -191,6 +198,22 @@
     margin-left: 0;
     margin-top: 2rem;
     background: url("/img/red-vector-cup.svg") no-repeat center top/cover;
+  }
+  .program {
+    flex-direction: column;
+  }
+  .program .program--title {
+    display: block;
+    font-size: 4rem;
+    margin-bottom: 2rem;
+    text-transform: uppercase;
+  }
+  .program .program--img {
+    display: none;
+  }
+  .program__list {
+    width: 100%;
+    padding-right: 3rem;
   }
 }
 

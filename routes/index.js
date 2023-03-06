@@ -67,4 +67,22 @@ router.get('/competitions/cup-benelux', (req, res) => {
   });
 })
 
+router.get('/news', (req, res) => {
+  res.render('news', {
+    pageTitle: 'ABA - news',
+    path: '/news',
+    theme: 'dark',
+    introImage: '/img/about-logo.png',
+  });
+})
+
+router.get('/results', (req, res) => {
+  res.render('results', {
+    pageTitle: 'ABA - results and statistics',
+    path: '/results',
+    theme: 'dark',
+    introImage: '/img/about-logo.png',
+  });
+})
+
 module.exports = router;

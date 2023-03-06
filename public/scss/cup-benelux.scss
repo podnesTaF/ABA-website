@@ -1,3 +1,7 @@
+main {
+  border-right: 1px solid #D9DADB;
+  border-left: 1px solid #D9DADB;
+}
 .intro {
   width: 100%;
   &--image {
@@ -126,15 +130,17 @@
   width: 100%;
   padding-left: 3rem;
   padding-bottom: 3rem;
-   &__title {
-    font-size: 4rem;
-    margin-bottom: 2rem;
-    text-transform: uppercase;
+  display: flex;
+  justify-content: space-around;
+  &--title {
+    display: none;
    }
   &__list {
       margin-bottom: 1rem;
-      li {
-        margin-left: 40px;
+      list-style-type: none;
+      li:not(:first-child) {
+        border-bottom: 1px solid #D9DADB;
+        padding-bottom: 0.5rem;
       }
       li:first-child {
         text-transform: uppercase;
@@ -205,6 +211,23 @@
       margin-left: 0;
       margin-top: 2rem;
       background: url("/img/red-vector-cup.svg") no-repeat center top/cover;
+    }
+  }
+
+  .program {
+    flex-direction: column;
+    .program--title {
+      display: block;
+      font-size: 4rem;
+      margin-bottom: 2rem;
+      text-transform: uppercase;
+    }
+    .program--img {
+      display: none;
+    }
+    &__list {
+      width: 100%;
+      padding-right: 3rem;
     }
   }
   
