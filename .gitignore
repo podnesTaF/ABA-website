@@ -2,3 +2,4 @@ node_modules
 .prettierignore
 app.yaml
 Procfile
+.idea
